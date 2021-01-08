@@ -1,0 +1,103 @@
+<!-- prettier-ignore -->
+{% extends 'base/index.html' %}
+{% load static %}
+
+{% block about %}
+	{% block shape-divider %}
+	{% endblock shape-divider %}
+{% endblock about %}
+
+{% block all-content %}
+<div class="border-nav"></div>
+<section id="main-skills">
+	<div class="container">
+		<h2 class="section-title py-3">Skills</h2>
+		<div class="bottom-line"></div>
+		<p class="lead text-center">Here Are Things I'm Good At</p>
+		<div class="skill-main">
+			<ul>
+				<li>
+					<h5>Python</h5>
+					<p>Scripting, Django</p>
+					<div class="outer-bar">
+						<div class="inner-bar" style="width: 70%"></div>
+					</div>
+				</li>
+				<li>
+					<h5>HTML5 and CSS3</h5>
+					<p>Sass, Bootstrap</p>
+					<div class="outer-bar">
+						<div class="inner-bar" style="width: 90%"></div>
+					</div>
+				</li>
+				<li>
+					<h5>JavaScript</h5>
+					<p></p>
+					<div class="outer-bar">
+						<div class="inner-bar" style="width: 60%"></div>
+					</div>
+				</li>
+				<li>
+					<h5>SQL PL/SQL</h5>
+					<p>Oracle, Postgres</p>
+					<div class="outer-bar">
+						<div class="inner-bar" style="width: 75%"></div>
+					</div>
+				</li>
+				<li>
+					<h5>Selenium</h5>
+					<p>With Python</p>
+					<div class="outer-bar">
+						<div class="inner-bar" style="width: 70%"></div>
+					</div>
+				</li>
+				<li>
+					<h5>GIT AND GITHUB</h5>
+					<p></p>
+					<div class="outer-bar">
+						<div class="inner-bar" style="width: 70%"></div>
+					</div>
+				</li>
+				<li>
+					<h5>Cooking 🙈</h5>
+					<p></p>
+					<div class="outer-bar">
+						<div class="inner-bar" style="width: 100%"></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<section id="logo-skills" class="py-4">
+	<div class="container">
+		<div class="about-logos">
+			<img
+				src="{% static '/image/logo-skills/Django.png' %}"
+				alt=""
+				srcset=""
+			/>
+			<img
+				src="{% static '/image/logo-skills/Python.png' %}"
+				alt=""
+				srcset=""
+			/>
+			<img
+				src="{% static '/image/logo-skills/postgres.png' %}"
+				alt=""
+				srcset=""
+			/>
+			<img
+				src="{% static '/image/logo-skills/Selenium.png' %}"
+				alt=""
+				srcset=""
+			/>
+		</div>
+	</div>
+</section>
+<section id="main-contact">
+	<div class="container">
+		<h2>Contact</h2>
+	</div>
+</section>
+{% endblock all-content %}
