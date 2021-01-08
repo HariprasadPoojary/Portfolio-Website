@@ -1,0 +1,320 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hariprasad | Web Developer</title>
+		<script
+			src="https://kit.fontawesome.com/5cec223499.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Engagement&family=Noto+Sans+TC&family=Quicksand&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="{% static '/css/main.css' %}" />
+	</head>
+	<body>
+		<header id="main-header">
+			<div class="container">
+				<!-- prettier-ignore -->
+				{% block navbar %} 
+					{% include 'base/navbar.html' %} 
+				{% endblock navbar %}
+				{% block about %}
+				<section id="main-body" class="py-4">
+					<div class="sub-container">
+						<section id="main-about">
+							<div class="intro-a">
+								<h2>Hi, I'm Hariprasad Poojary!</h2>
+								<div>
+									I'm a
+									<span
+										class="txt-type"
+										data-wait="2000"
+										data-words='["Font-End Developer","Back-End Developer", "Automation Tester", "Manual Tester"]'
+									></span>
+								</div>
+								<div class="social">
+									<a
+										href="https://www.facebook.com/HariiPoojary/"
+										target="_blank"
+										><i class="fab fa-facebook"></i
+									></a>
+									<a
+										href="https://github.com/HariprasadPoojary"
+										target="_blank"
+										><i class="fab fa-github"></i
+									></a>
+									<a
+										href="https://www.instagram.com/hari_poojary/"
+										target="_blank"
+										><i class="fab fa-instagram"></i
+									></a>
+									<a
+										href="https://www.linkedin.com/in/hariprasadjanardhanpoojary/"
+										target="_blank"
+										><i class="fab fa-linkedin"></i
+									></a>
+								</div>
+							</div>
+							<div class="intro-b">
+								<img
+									src="{% static '/image/hari-about.jpg' %}"
+									alt="Hariprasad"
+								/>
+							</div>
+							<div class="intro-c">
+								<p class="lead">
+									Lorem ipsum dolor sit, amet consectetur
+									adipisicing elit. Repellat quasi tempore et
+									earum dolorem sunt expedita ducimus
+									praesentium error impedit?
+								</p>
+							</div>
+						</section>
+					</div>
+				</section>
+				{% endblock about %}
+			</div>
+			{% block shape-divider %}
+			<div class="custom-shape-divider-bottom-1601119354">
+				<svg
+					data-name="Layer 1"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 1200 120"
+					preserveAspectRatio="none"
+				>
+					<path
+						d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+						opacity=".25"
+						class="shape-fill"
+					></path>
+					<path
+						d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+						opacity=".5"
+						class="shape-fill"
+					></path>
+					<path
+						d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+						class="shape-fill"
+					></path>
+				</svg>
+			</div>
+			{% endblock shape-divider %}
+		</header>
+		<section id="all-content">
+			{% block all-content %}
+			<section id="main-experience">
+				<div class="container">
+					<h2 class="section-title py-2 my-2">My Experience</h2>
+					<div class="bottom-line"></div>
+					<div class="main-exp text-center py-2">
+						<div class="exp-a">
+							<i class="fas fa-user-tie fa-3x"></i>
+							<p class="lead">
+								Around 4 years of IT experience with Tech
+								Mahindra. My skills are majorly into software
+								testing and telecom OSS/BSS. Decent domain
+								knowledge in Telecom industry related to copper
+								and fiber network access domain in both
+								wholesale and retail consumer market.
+							</p>
+						</div>
+						<div class="exp-b">
+							<i class="fas fa-vials fa-3x"></i>
+							<p class="lead">
+								Working as a functional QA in a variety of test
+								phases like system test, system integration
+								test, E2E test. Have very good analytical, able
+								to deal with complicated projects, ability to
+								understand complex designs and creating high
+								quality and timely working results.
+							</p>
+						</div>
+						<div class="exp-c">
+							<i class="fab fa-python fa-3x"></i>
+							<i class="fab fa-html5 fa-3x"></i>
+							<i class="fab fa-css3-alt fa-3x"></i>
+							<i class="fas fa-database fa-3x"></i>
+							<p class="lead">
+								Skilled in Functional testing, Manual testing,
+								Python, Django, Django Rest Framework, Selenium
+								WebDriver with Python, Web Development, SQL,
+								PL/SQL.
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- Awards -->
+				<h2 class="section-title py-2">Awards</h2>
+				<div class="bottom-line"></div>
+				<div class="awards py-4">
+					<div class="award-1 py-3 text-center">
+						<i class="fas fa-award fa-5x"></i>
+
+						<h4 class="highlight">
+							<span>TESTA</span>,
+							<span>The European Software Testing Awards</span>
+						</h4>
+						<h6 class="highlight-sub">
+							Category: Best Overall Testing Project
+							(Communications)
+						</h6>
+					</div>
+					<div class="award-2 py-3 text-center">
+						<i class="fas fa-award fa-5x"></i>
+
+						<h4 class="highlight">
+							<span>ACE</span>
+							<span>(Associates Consistently Excel)</span>
+						</h4>
+						<h6 class="highlight-sub">Awarded by TechMahindra</h6>
+					</div>
+					<div class="award-3 py-3 text-center">
+						<i class="fas fa-award fa-5x"></i>
+
+						<h4 class="highlight">
+							<span>Bravo</span>
+							<span></span>
+						</h4>
+						<h6 class="highlight-sub">
+							Awarded by TechMahindra for Maximum number of defect
+							logging, test execution and training newcomers.
+						</h6>
+					</div>
+				</div>
+				<!-- Life Timeline -->
+				<section id="timeline">
+					<div class="container">
+						<h2 class="section-title py-2">Timeline</h2>
+						<div class="bottom-line"></div>
+						<ul>
+							<li>
+								<div>
+									<h3>
+										<i class="fas fa-chevron-right"></i>18th
+										June, 1995: Birthday
+									</h3>
+									<p>My Birthday!</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<h3>
+										<i class="fas fa-chevron-right"></i
+										>2016, March: Graduation
+									</h3>
+									<p>
+										Bachelor of Science in Information
+										Technology, St. Andrew's College of
+										Arts, Science and Commerce
+									</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<h3>
+										<i class="fas fa-chevron-right"></i
+										>2016, August: First Job
+									</h3>
+									<p>
+										Started My First Job as Junior Software
+										Engineer at Tech Mahindra
+									</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<h3>
+										<i class="fas fa-chevron-right"></i
+										>2017, December: Travelled to
+										Netherlands
+									</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur,
+										adipisicing elit. Nam, inventore?
+									</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<h3>
+										<i class="fas fa-chevron-right"></i
+										>2019: Started building
+										projects/websites!
+									</h3>
+									<p>
+										Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit. Quidem repudiandae
+										ratione consequuntur fuga libero? Ad qui
+										suscipit perferendis expedita nemo!
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			{% endblock all-content %}
+		</section>
+		<footer id="main-footer" class="text-center">
+			<div class="sub-container">
+				<div class="foot-main">
+					<div class="foot-a py-2">
+						<ul>
+							<li>
+								<a class="current" href="{% url 'index' %}"
+									>About</a
+								>
+							</li>
+							<li>
+								<a href="{% url 'index' %}#main-experience"
+									>Experience</a
+								>
+							</li>
+							<li>
+								<a href="{% url 'more' %}#main-skills"
+									>Skills</a
+								>
+							</li>
+							<li>
+								<a href="{% url 'more' %}#main-contact"
+									>Contact</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="foot-b py-2">
+						<div class="social">
+							<a href="mailto:haridx.poojary@gmail.com"
+								><i class="fas fa-envelope fa-3x"></i
+							></a>
+							<a
+								href="https://www.facebook.com/HariiPoojary/"
+								target="_blank"
+								><i class="fab fa-facebook fa-3x"></i
+							></a>
+							<a
+								href="https://www.instagram.com/hari_poojary/"
+								target="_blank"
+								><i class="fab fa-instagram fa-3x"></i
+							></a>
+							<a
+								href="https://www.linkedin.com/in/hariprasadjanardhanpoojary/"
+								target="_blank"
+								><i class="fab fa-linkedin fa-3x"></i
+							></a>
+						</div>
+					</div>
+					<div class="foot-c">
+						<h3>&copy; 2020 Hariprasad Poojary</h3>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="{% static '/js/typewriter.js' %}"></script>
+		<script src="{% static '/js/timeline.js' %}"></script>
+	</body>
+</html>
