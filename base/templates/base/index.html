@@ -23,6 +23,7 @@
 					{% include 'base/navbar.html' %} 
 				{% endblock navbar %}
 				{% block about %}
+				<!-- Hero Section -->
 				<section id="main-body" class="py-4">
 					<div class="sub-container">
 						<section id="main-about">
@@ -78,6 +79,7 @@
 				</section>
 				{% endblock about %}
 			</div>
+			<!-- Shape Under Hero section -->
 			{% block shape-divider %}
 			<div class="custom-shape-divider-bottom-1601119354">
 				<svg
@@ -106,9 +108,10 @@
 		</header>
 		<section id="all-content">
 			{% block all-content %}
+			<!-- Experience Section -->
 			<section id="main-experience">
 				<div class="container">
-					<h2 class="section-title py-2 my-2">My Experience</h2>
+					<h2 class="section-title py-2">My Experience</h2>
 					<div class="bottom-line"></div>
 					<div class="main-exp text-center py-2">
 						<div class="exp-a">
@@ -147,7 +150,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- Awards -->
+				<!-- Awards Section -->
 				<h2 class="section-title py-2">Awards</h2>
 				<div class="bottom-line"></div>
 				<div class="awards py-4">
@@ -185,135 +188,14 @@
 						</h6>
 					</div>
 				</div>
-				<!-- Life Timeline -->
-				<section id="timeline">
-					<div class="container">
-						<h2 class="section-title py-2">Timeline</h2>
-						<div class="bottom-line"></div>
-						<ul>
-							<li>
-								<div>
-									<h3>
-										<i class="fas fa-chevron-right"></i>18th
-										June, 1995: Birthday
-									</h3>
-									<p>My Birthday!</p>
-								</div>
-							</li>
-							<li>
-								<div>
-									<h3>
-										<i class="fas fa-chevron-right"></i
-										>2016, March: Graduation
-									</h3>
-									<p>
-										Bachelor of Science in Information
-										Technology, St. Andrew's College of
-										Arts, Science and Commerce
-									</p>
-								</div>
-							</li>
-							<li>
-								<div>
-									<h3>
-										<i class="fas fa-chevron-right"></i
-										>2016, August: First Job
-									</h3>
-									<p>
-										Started My First Job as Junior Software
-										Engineer at Tech Mahindra
-									</p>
-								</div>
-							</li>
-							<li>
-								<div>
-									<h3>
-										<i class="fas fa-chevron-right"></i
-										>2017, December: Travelled to
-										Netherlands
-									</h3>
-									<p>
-										Lorem ipsum dolor sit amet consectetur,
-										adipisicing elit. Nam, inventore?
-									</p>
-								</div>
-							</li>
-							<li>
-								<div>
-									<h3>
-										<i class="fas fa-chevron-right"></i
-										>2019: Started building
-										projects/websites!
-									</h3>
-									<p>
-										Lorem ipsum dolor sit, amet consectetur
-										adipisicing elit. Quidem repudiandae
-										ratione consequuntur fuga libero? Ad qui
-										suscipit perferendis expedita nemo!
-									</p>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</section>
-			</section>
+				
 			{% endblock all-content %}
 		</section>
-		<footer id="main-footer" class="text-center">
-			<div class="sub-container">
-				<div class="foot-main">
-					<div class="foot-a py-2">
-						<ul>
-							<li>
-								<a class="current" href="{% url 'index' %}"
-									>About</a
-								>
-							</li>
-							<li>
-								<a href="{% url 'index' %}#main-experience"
-									>Experience</a
-								>
-							</li>
-							<li>
-								<a href="{% url 'more' %}#main-skills"
-									>Skills</a
-								>
-							</li>
-							<li>
-								<a href="{% url 'more' %}#main-contact"
-									>Contact</a
-								>
-							</li>
-						</ul>
-					</div>
-					<div class="foot-b py-2">
-						<div class="social">
-							<a href="mailto:haridx.poojary@gmail.com"
-								><i class="fas fa-envelope fa-3x"></i
-							></a>
-							<a
-								href="https://www.facebook.com/HariiPoojary/"
-								target="_blank"
-								><i class="fab fa-facebook fa-3x"></i
-							></a>
-							<a
-								href="https://www.instagram.com/hari_poojary/"
-								target="_blank"
-								><i class="fab fa-instagram fa-3x"></i
-							></a>
-							<a
-								href="https://www.linkedin.com/in/hariprasadjanardhanpoojary/"
-								target="_blank"
-								><i class="fab fa-linkedin fa-3x"></i
-							></a>
-						</div>
-					</div>
-					<div class="foot-c">
-						<h3>&copy; 2020 Hariprasad Poojary</h3>
-					</div>
-				</div>
-			</div>
-		</footer>
+		<!-- Footer -->
+		<!-- prettier-ignore -->
+		{% block footer %}
+			{% include 'base/footer.html' %} 
+		{% endblock footer %}
 		<script src="{% static '/js/typewriter.js' %}"></script>
 		<script src="{% static '/js/timeline.js' %}"></script>
 	</body>

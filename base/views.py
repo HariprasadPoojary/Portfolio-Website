@@ -10,5 +10,13 @@ def index(request):
     return render(request, "base/index.html")
 
 
-def more(request):
-    return render(request, "base/main.html")
+def about(request):
+    return render(request, "base/about.html")
+
+
+def work(request):
+    return render(request, "base/work.html")
+
+
+def contact(request):
+    return render(request, "base/contact.html")
