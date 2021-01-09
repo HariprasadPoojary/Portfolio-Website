@@ -148,20 +148,18 @@ a {
 	.main-exp {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 3rem;
+		gap: 2rem;
 		justify-content: center;
 		align-items: center;
 		i {
 			padding-bottom: 2rem;
 		}
-	}
-	.exp {
-		&-c {
-			.fa-html5 {
-				color: orangered;
-			}
-			.fa-css3-alt {
-				color: rgb(0, 195, 255);
+
+		.exp {
+			&-c {
+				.lead {
+					font-size: 1.4rem;
+				}
 			}
 		}
 	}
@@ -204,8 +202,8 @@ a {
 
 // Skills
 #main-skills {
-	background-color: #fff;
-	color: set-text-color(#fff);
+	background-color: $dark-color;
+	color: set-text-color($dark-color);
 	.skill-main {
 		ul {
 			li {
@@ -235,14 +233,11 @@ a {
 #logo-skills {
 	background-color: $medium-color;
 	.about-logos {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: 2rem;
-		&:first-child {
-			padding-left: 5rem;
-		}
+		display: flex;
+		justify-content: center;
+		gap: 3rem;
 		img {
-			width: 50%;
+			width: 10%;
 		}
 	}
 }

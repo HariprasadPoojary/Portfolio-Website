@@ -9,6 +9,17 @@
 
 {% block all-content %}
 <div class="border-nav"></div>
+<!-- About me Section -->
+<section id="section-about-me py2">
+	<div class="container">
+		<h2 class="section-title py-3">About Me</h2>
+		<div class="bottom-line"></div>
+		<p class="lead text-center">Let me tell you more about myself</p>
+		<div class="about-me">
+
+		</div>
+	</div>
+</section>
 <!-- Skils Section -->
 <section id="main-skills">
 	<div class="container">
@@ -70,26 +81,42 @@
 		</div>
 	</div>
 </section>
+<!-- Skills Logo Section -->
 <section id="logo-skills" class="py-4">
 	<div class="container">
 		<div class="about-logos">
 			<img
-				src="{% static '/image/logo-skills/Django.png' %}"
+				src="{% static '/image/logo-skills/django.svg' %}"
+				alt="Django"
+				srcset=""
+			/>
+			<img
+				src="{% static '/image/logo-skills/python.svg' %}"
 				alt=""
 				srcset=""
 			/>
 			<img
-				src="{% static '/image/logo-skills/Python.png' %}"
+				src="{% static '/image/logo-skills/javascript.svg' %}"
 				alt=""
 				srcset=""
 			/>
 			<img
-				src="{% static '/image/logo-skills/postgres.png' %}"
+				src="{% static '/image/logo-skills/html5.svg' %}"
 				alt=""
 				srcset=""
 			/>
 			<img
-				src="{% static '/image/logo-skills/Selenium.png' %}"
+				src="{% static '/image/logo-skills/css3.svg' %}"
+				alt=""
+				srcset=""
+			/>
+			<img
+				src="{% static '/image/logo-skills/postgresql.svg' %}"
+				alt=""
+				srcset=""
+			/>
+			<img
+				src="{% static '/image/logo-skills/selenium.svg' %}"
 				alt=""
 				srcset=""
 			/>
