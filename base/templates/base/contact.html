@@ -10,10 +10,34 @@
 {% block all-content %}
 <div class="border-nav"></div>
 <section id="main-contact">
-	<div class="container">
-		<h2>Contact Me</h2>
+	<div class="container py-2">
+		<h2 class="section-title py-2">Contact Me</h2>
 		<div class="bottom-line"></div>
-		<p class="lead">Here's how you can reach me</p>
+		<p class="lead text-center">Here's how you can reach me</p>
+		<form action="" method="post" class="conact-me">
+			<!-- prettier-ignore -->
+			{% csrf_token %}
+
+			{{contact_form.name}}
+			{{contact_form.email}}
+			{{contact_form.subject}}
+			{{contact_form.phone}}
+			{{contact_form.message}}
+
+			<input type="submit" value="Submit" />
+		</form>
 	</div>
 </section>
+<script>
+	const name = document.querySelector("#id_name");
+	name.placeholder = "Name...";
+	const email = document.querySelector("#id_email");
+	email.placeholder = "Email...";
+	const subject = document.querySelector("#id_subject");
+	subject.placeholder = "Subject...";
+	const phone = document.querySelector("#id_phone");
+	phone.placeholder = "Phone...";
+	const message = document.querySelector("#id_message");
+	message.placeholder = "Your Message...";
+</script>
 {% endblock all-content %}
