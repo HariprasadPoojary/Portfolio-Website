@@ -40,7 +40,7 @@ a {
 		&-nav {
 			display: flex;
 			justify-content: space-between;
-			padding: 0.5rem 1rem;
+			// padding: 0.5rem 1rem;
 			// position: fixed;
 			// top: 0;
 			// left: 0;
@@ -91,7 +91,7 @@ a {
 		"introa introb"
 		"introc introb";
 	gap: 4rem;
-	padding: 1.5rem 1.5rem 12rem 0;
+	padding: 1.5rem 1.5rem 13rem 0;
 	.intro {
 		&-a {
 			grid-area: introa;
@@ -263,7 +263,55 @@ a {
 
 // Life Timeline
 @import "timeline";
+
 // Contact
+#main-contact {
+	padding: 0 1rem;
+	.contact-me {
+		input,
+		textarea {
+			border: 2px solid;
+			padding: 0.6rem 1rem;
+			&:hover {
+				// outline: 2px solid $secondary-color;
+				box-shadow: 0 0 0 2px $secondary-color;
+			}
+			&:focus {
+				outline: 2px solid $main-color;
+			}
+		}
+
+		#id_name {
+			grid-area: name;
+		}
+		#id_email {
+			grid-area: email;
+		}
+		#id_subject {
+			grid-area: subject;
+		}
+		#id_phone {
+			grid-area: phone;
+		}
+		#id_message {
+			grid-area: message;
+			margin-bottom: 1rem;
+		}
+		input[type="submit"] {
+			grid-area: submit;
+			width: 50%;
+			margin: auto; // center
+		}
+		display: grid;
+		grid-template-areas:
+			"name email"
+			"subject phone"
+			"message message"
+			"submit submit";
+		gap: 1.2rem;
+		margin-bottom: 2rem;
+	}
+}
 
 // Footer
 #main-footer {

@@ -16,8 +16,16 @@
   padding: 1rem 0;
 }
 
+.px-1 {
+  padding: 0 1rem;
+}
+
 .py-2 {
   padding: 2rem 0;
+}
+
+.px-2 {
+  padding: 0 2rem;
 }
 
 .py-3 {
@@ -147,7 +155,6 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0.5rem 1rem;
 }
 
 #main-header .head-nav-logo a {
@@ -200,7 +207,7 @@ a {
   display: grid;
       grid-template-areas: "introa introb" "introc introb";
   gap: 4rem;
-  padding: 1.5rem 1.5rem 12rem 0;
+  padding: 1.5rem 1.5rem 13rem 0;
 }
 
 #main-about .intro-a {
@@ -482,6 +489,76 @@ a {
 #timeline ul li.show::after {
   visibility: visible;
   background-color: coral;
+}
+
+#main-contact {
+  padding: 0 1rem;
+}
+
+#main-contact .contact-me {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "name email" "subject phone" "message message" "submit submit";
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+#main-contact .contact-me input,
+#main-contact .contact-me textarea {
+  border: 2px solid;
+  padding: 0.6rem 1rem;
+}
+
+#main-contact .contact-me input:hover,
+#main-contact .contact-me textarea:hover {
+  -webkit-box-shadow: 0 0 0 2px coral;
+          box-shadow: 0 0 0 2px coral;
+}
+
+#main-contact .contact-me input:focus,
+#main-contact .contact-me textarea:focus {
+  outline: 2px solid #55e6c1;
+}
+
+#main-contact .contact-me #id_name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: name;
+}
+
+#main-contact .contact-me #id_email {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: email;
+}
+
+#main-contact .contact-me #id_subject {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: subject;
+}
+
+#main-contact .contact-me #id_phone {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: phone;
+}
+
+#main-contact .contact-me #id_message {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: message;
+  margin-bottom: 1rem;
+}
+
+#main-contact .contact-me input[type="submit"] {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: submit;
+  width: 50%;
+  margin: auto;
 }
 
 #main-footer {
