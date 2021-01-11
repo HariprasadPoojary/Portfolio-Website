@@ -48,13 +48,13 @@ a {
 			// backdrop-filter: blur(5px);
 			&-logo a {
 				font-family: $font-logo;
-				font-size: 3rem;
+				font-size: 2.5rem;
 				padding: 1rem;
 				color: $dark-color;
 				font-weight: 700;
 				transition: all 0.3s ease-in-out;
 				&:hover {
-					font-size: 3.3rem;
+					font-size: 2.8rem;
 					font-weight: 900;
 					color: $secondary-color;
 				}
@@ -91,7 +91,7 @@ a {
 		"introa introb"
 		"introc introb";
 	gap: 4rem;
-	padding: 1.5rem 1.5rem 13rem 0;
+	padding: 1.5rem 1.5rem 13.9rem 0;
 	.intro {
 		&-a {
 			grid-area: introa;
@@ -264,7 +264,7 @@ a {
 // Life Timeline
 @import "timeline";
 
-// Contact
+// Contact Me
 #main-contact {
 	padding: 0 1rem;
 	.contact-me {
@@ -305,6 +305,8 @@ a {
 			grid-area: submit;
 			width: 50%;
 			margin: auto; // center
+			background-color: $dark-color;
+			color: set-text-color($dark-color);
 		}
 		display: grid;
 		grid-template-areas:
@@ -315,6 +317,16 @@ a {
 		gap: 1.2rem;
 		margin-bottom: 2rem;
 	}
+}
+
+// My Contact
+#my-contact {
+	.contact-info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	background-color: $medium-color;
 }
 
 // Footer

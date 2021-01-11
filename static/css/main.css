@@ -172,7 +172,7 @@ a {
 
 #main-header .head-nav-logo a {
   font-family: "Engagement", cursive;
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding: 1rem;
   color: #222;
   font-weight: 700;
@@ -181,7 +181,7 @@ a {
 }
 
 #main-header .head-nav-logo a:hover {
-  font-size: 3.3rem;
+  font-size: 2.8rem;
   font-weight: 900;
   color: coral;
 }
@@ -220,7 +220,7 @@ a {
   display: grid;
       grid-template-areas: "introa introb" "introc introb";
   gap: 4rem;
-  padding: 1.5rem 1.5rem 13rem 0;
+  padding: 1.5rem 1.5rem 13.9rem 0;
 }
 
 #main-about .intro-a {
@@ -578,6 +578,24 @@ a {
   grid-area: submit;
   width: 50%;
   margin: auto;
+  background-color: #222;
+  color: #fff;
+}
+
+#my-contact {
+  background-color: #ccc;
+}
+
+#my-contact .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #main-footer {
