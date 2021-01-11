@@ -72,6 +72,13 @@
 	background-color: $dark-color;
 }
 
+.btn {
+	cursor: pointer;
+	transition: box-shadow 180ms ease-in;
+	&:hover {
+		box-shadow: 0 0 0 3px coral;
+	}
+}
 // Icons
 .social {
 	a i {

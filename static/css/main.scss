@@ -272,12 +272,15 @@ a {
 		textarea {
 			border: 2px solid;
 			padding: 0.6rem 1rem;
-			&:hover {
-				// outline: 2px solid $secondary-color;
-				box-shadow: 0 0 0 2px $secondary-color;
-			}
+			font-family: $font-others;
+			font-size: medium;
+			font-weight: 900;
+			border-radius: 4px;
+			transition: 180ms box-shadow ease-in-out;
 			&:focus {
-				outline: 2px solid $main-color;
+				border-color: rgb(255, 128, 82);
+				box-shadow: 0 0 0 3px rgba(240, 169, 128, 0.8);
+				outline: 3px solid transparent;
 			}
 		}
 
@@ -296,6 +299,7 @@ a {
 		#id_message {
 			grid-area: message;
 			margin-bottom: 1rem;
+			resize: none;
 		}
 		input[type="submit"] {
 			grid-area: submit;

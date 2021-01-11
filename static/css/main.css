@@ -82,6 +82,19 @@
   background-color: #222;
 }
 
+.btn {
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 180ms ease-in;
+  transition: -webkit-box-shadow 180ms ease-in;
+  transition: box-shadow 180ms ease-in;
+  transition: box-shadow 180ms ease-in, -webkit-box-shadow 180ms ease-in;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0 0 0 3px coral;
+          box-shadow: 0 0 0 3px coral;
+}
+
 .social a i {
   color: #666;
   margin-right: 0.5rem;
@@ -507,17 +520,22 @@ a {
 #main-contact .contact-me textarea {
   border: 2px solid;
   padding: 0.6rem 1rem;
-}
-
-#main-contact .contact-me input:hover,
-#main-contact .contact-me textarea:hover {
-  -webkit-box-shadow: 0 0 0 2px coral;
-          box-shadow: 0 0 0 2px coral;
+  font-family: "Quicksand", sans-serif;
+  font-size: medium;
+  font-weight: 900;
+  border-radius: 4px;
+  -webkit-transition: 180ms -webkit-box-shadow ease-in-out;
+  transition: 180ms -webkit-box-shadow ease-in-out;
+  transition: 180ms box-shadow ease-in-out;
+  transition: 180ms box-shadow ease-in-out, 180ms -webkit-box-shadow ease-in-out;
 }
 
 #main-contact .contact-me input:focus,
 #main-contact .contact-me textarea:focus {
-  outline: 2px solid #55e6c1;
+  border-color: #ff8052;
+  -webkit-box-shadow: 0 0 0 3px rgba(240, 169, 128, 0.8);
+          box-shadow: 0 0 0 3px rgba(240, 169, 128, 0.8);
+  outline: 3px solid transparent;
 }
 
 #main-contact .contact-me #id_name {
@@ -550,6 +568,7 @@ a {
   -ms-grid-column-span: 2;
   grid-area: message;
   margin-bottom: 1rem;
+  resize: none;
 }
 
 #main-contact .contact-me input[type="submit"] {
