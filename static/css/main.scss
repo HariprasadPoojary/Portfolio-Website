@@ -329,6 +329,77 @@ a {
 	background-color: $medium-color;
 }
 
+// ? Work Page
+#work-gallery {
+	.work-gallery-items {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		height: 24rem;
+		.row-1 {
+			&:nth-child(even) {
+				background-color: #dbcea7;
+			}
+			&:nth-child(odd) {
+				background-color: #dbcea757;
+			}
+		}
+		.row-2 {
+			&:nth-child(odd) {
+				background-color: #dbcea7;
+			}
+			&:nth-child(even) {
+				background-color: #dbcea757;
+			}
+		}
+	}
+	.col {
+		flex: 1;
+		height: 100%;
+		padding: 1rem;
+		position: relative;
+		transition: 0.6s;
+		z-index: 1;
+		img {
+			width: 20rem;
+			height: 20rem;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			z-index: 2;
+		}
+
+		.caption {
+			margin: 1rem 0;
+			font-size: small;
+			position: absolute;
+			top: 4;
+			left: 3;
+			display: none;
+			z-index: 3;
+		}
+		.btn-gallery {
+			display: inline-block;
+			border-radius: 30px;
+			background-color: transparent;
+			border: 1px solid #333;
+			padding: 8px 18px;
+			margin-top: 20px;
+		}
+
+		//
+		&:hover {
+			flex-grow: 2.5;
+			h2 {
+				text-align: left;
+			}
+			.caption {
+				display: block;
+			}
+		}
+	}
+}
+
 // Footer
 #main-footer {
 	background-color: $dark-color;

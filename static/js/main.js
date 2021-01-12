@@ -1,3 +1,5 @@
+// * to toggle class current in navbar menu items
+
 let windowURL = document.URL;
 let page = windowURL.split("/")[3];
 // page = page != "" ? page : "home";
