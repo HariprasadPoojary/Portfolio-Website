@@ -1,15 +1,26 @@
-/** For tablet devices **/
-@media (min-width: 768px) and (max-width: 1023px) {
+// Smart phones
+@media (max-width: 500px) {
+	// shape divider
 	.custom-shape-divider-bottom-1601119354 svg {
-		width: calc(167% + 1.3px);
-		height: 315px;
+		width: calc(190% + 1.3px);
+		height: 120px;
 	}
-}
-
-/** For mobile devices **/
-@media (max-width: 767px) {
-	.custom-shape-divider-bottom-1601119354 svg {
-		width: calc(168% + 1.3px);
-		height: 274px;
+	// Header -> Navbar
+	#main-header {
+		.head-nav {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	// Header -> About
+	#main-about {
+		// padding: 1.5rem 1.5rem 8.6rem 1.5rem;
+		grid-template-areas:
+			"introa"
+			"introc";
+		text-align: center;
+		.intro-b {
+			display: none;
+		}
 	}
 }

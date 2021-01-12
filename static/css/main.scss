@@ -87,11 +87,11 @@ a {
 // Header -> About
 #main-about {
 	display: grid;
-	grid-template-areas:
-		"introa introb"
-		"introc introb";
-	gap: 4rem;
-	padding: 1.5rem 1.5rem 13.9rem 0;
+	grid-template-areas: "introa introb";
+	// "introc introb";
+	gap: 2rem;
+	margin-top: 4rem;
+	height: 82vh;
 	.intro {
 		&-a {
 			grid-area: introa;
@@ -101,9 +101,13 @@ a {
 			div {
 				font-size: 1.3rem;
 			}
+			p.lead {
+				margin-top: 4rem;
+			}
 		}
 		&-b {
 			grid-area: introb;
+			padding: 0 2rem;
 			img {
 				width: 300px;
 				border-radius: 50%;
@@ -113,15 +117,12 @@ a {
 				}
 			}
 		}
-		&-c {
-			grid-area: introc;
-		}
 	}
 }
 
 // Waves
 #main-header {
-	.custom-shape-divider-bottom-1601119354 {
+	.custom-shape-divider-bottom-1610467520 {
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -131,14 +132,15 @@ a {
 		transform: rotate(180deg);
 	}
 
-	.custom-shape-divider-bottom-1601119354 svg {
+	.custom-shape-divider-bottom-1610467520 svg {
 		position: relative;
 		display: block;
-		width: calc(147% + 1.3px);
-		height: 238px;
+		width: calc(201% + 1.3px);
+		height: 156px;
+		transform: rotateY(180deg);
 	}
 
-	.custom-shape-divider-bottom-1601119354 .shape-fill {
+	.custom-shape-divider-bottom-1610467520 .shape-fill {
 		fill: #ffffff;
 	}
 }
@@ -336,20 +338,22 @@ a {
 		flex-flow: row wrap;
 		justify-content: center;
 		height: 24rem;
+		gap: 1rem;
+		margin-bottom: 1rem;
 		.row-1 {
 			&:nth-child(even) {
-				background-color: #dbcea7;
+				background-color: #f2ad4e;
 			}
 			&:nth-child(odd) {
-				background-color: #dbcea757;
+				background-color: #fff1ad;
 			}
 		}
 		.row-2 {
 			&:nth-child(odd) {
-				background-color: #dbcea7;
+				background-color: #f2ad4e;
 			}
 			&:nth-child(even) {
-				background-color: #dbcea757;
+				background-color: #fff1ad;
 			}
 		}
 	}
@@ -358,11 +362,11 @@ a {
 		height: 100%;
 		padding: 1rem;
 		position: relative;
-		transition: 0.6s;
+		transition: all 0.8s;
 		z-index: 1;
 		img {
-			width: 20rem;
-			height: 20rem;
+			width: 70%;
+			height: 70%;
 			position: absolute;
 			right: 0;
 			bottom: 0;
@@ -371,6 +375,7 @@ a {
 
 		.caption {
 			margin: 1rem 0;
+			max-width: 14rem;
 			font-size: small;
 			position: absolute;
 			top: 4;

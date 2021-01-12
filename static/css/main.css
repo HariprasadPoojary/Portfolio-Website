@@ -219,9 +219,10 @@ a {
 #main-about {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "introa introb" "introc introb";
-  gap: 4rem;
-  padding: 1.5rem 1.5rem 13.9rem 0;
+      grid-template-areas: "introa introb";
+  gap: 2rem;
+  margin-top: 4rem;
+  height: 82vh;
 }
 
 #main-about .intro-a {
@@ -238,11 +239,15 @@ a {
   font-size: 1.3rem;
 }
 
+#main-about .intro-a p.lead {
+  margin-top: 4rem;
+}
+
 #main-about .intro-b {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: introb;
+  padding: 0 2rem;
 }
 
 #main-about .intro-b img {
@@ -257,13 +262,7 @@ a {
           box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.5);
 }
 
-#main-about .intro-c {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: introc;
-}
-
-#main-header .custom-shape-divider-bottom-1601119354 {
+#main-header .custom-shape-divider-bottom-1610467520 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -274,14 +273,16 @@ a {
           transform: rotate(180deg);
 }
 
-#main-header .custom-shape-divider-bottom-1601119354 svg {
+#main-header .custom-shape-divider-bottom-1610467520 svg {
   position: relative;
   display: block;
-  width: calc(147% + 1.3px);
-  height: 238px;
+  width: calc(201% + 1.3px);
+  height: 156px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
-#main-header .custom-shape-divider-bottom-1601119354 .shape-fill {
+#main-header .custom-shape-divider-bottom-1610467520 .shape-fill {
   fill: #ffffff;
 }
 
@@ -611,22 +612,24 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   height: 24rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 #work-gallery .work-gallery-items .row-1:nth-child(even) {
-  background-color: #dbcea7;
+  background-color: #f2ad4e;
 }
 
 #work-gallery .work-gallery-items .row-1:nth-child(odd) {
-  background-color: #dbcea757;
+  background-color: #fff1ad;
 }
 
 #work-gallery .work-gallery-items .row-2:nth-child(odd) {
-  background-color: #dbcea7;
+  background-color: #f2ad4e;
 }
 
 #work-gallery .work-gallery-items .row-2:nth-child(even) {
-  background-color: #dbcea757;
+  background-color: #fff1ad;
 }
 
 #work-gallery .col {
@@ -636,14 +639,14 @@ a {
   height: 100%;
   padding: 1rem;
   position: relative;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
   z-index: 1;
 }
 
 #work-gallery .col img {
-  width: 20rem;
-  height: 20rem;
+  width: 70%;
+  height: 70%;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -652,6 +655,7 @@ a {
 
 #work-gallery .col .caption {
   margin: 1rem 0;
+  max-width: 14rem;
   font-size: small;
   position: absolute;
   top: 4;
@@ -716,19 +720,26 @@ a {
   color: #f4f4f4;
 }
 
-/** For tablet devices **/
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 500px) {
   .custom-shape-divider-bottom-1601119354 svg {
-    width: calc(167% + 1.3px);
-    height: 315px;
+    width: calc(190% + 1.3px);
+    height: 120px;
   }
-}
-
-/** For mobile devices **/
-@media (max-width: 767px) {
-  .custom-shape-divider-bottom-1601119354 svg {
-    width: calc(168% + 1.3px);
-    height: 274px;
+  #main-header .head-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #main-about {
+        grid-template-areas: "introa" "introc";
+    text-align: center;
+  }
+  #main-about .intro-b {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
