@@ -79,19 +79,45 @@
 .border-nav {
   width: 100%;
   height: 2px;
-  background-color: #222;
+  background-color: #333;
 }
 
-.btn {
-  cursor: pointer;
-  -webkit-transition: -webkit-box-shadow 180ms ease-in;
-  transition: -webkit-box-shadow 180ms ease-in;
-  transition: box-shadow 180ms ease-in;
-  transition: box-shadow 180ms ease-in, -webkit-box-shadow 180ms ease-in;
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
   border: none;
+  border-radius: 4px;
+  padding: 0.5rem 0.5rem;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
 }
 
-.btn:hover {
+.btn-main {
+  background-color: #55e6c1;
+  color: #000;
+}
+
+.btn-main:hover {
+  -webkit-box-shadow: 0 0 0 3px coral;
+          box-shadow: 0 0 0 3px coral;
+}
+
+.btn-light {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+.btn-light:hover {
+  -webkit-box-shadow: 0 0 0 3px coral;
+          box-shadow: 0 0 0 3px coral;
+}
+
+.btn-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-dark:hover {
   -webkit-box-shadow: 0 0 0 3px coral;
           box-shadow: 0 0 0 3px coral;
 }
@@ -175,7 +201,7 @@ a {
   font-family: "Engagement", cursive;
   font-size: 2.5rem;
   padding: 1rem;
-  color: #222;
+  color: #333;
   font-weight: 700;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -199,7 +225,7 @@ a {
 
 #main-header .head-nav-menu ul li a {
   text-transform: uppercase;
-  color: #222;
+  color: #333;
   font-size: large;
   font-weight: bolder;
   border-bottom: transparent solid 3px;
@@ -241,6 +267,14 @@ a {
 
 #main-about .intro-a p.lead {
   margin-top: 4rem;
+}
+
+#main-about .intro-a .d-cv {
+  margin-top: 4rem;
+}
+
+#main-about .intro-a .d-cv a {
+  text-transform: uppercase;
 }
 
 #main-about .intro-b {
@@ -366,7 +400,7 @@ a {
 }
 
 #main-skills {
-  background-color: #222;
+  background-color: #333;
   color: #fff;
 }
 
@@ -420,7 +454,7 @@ a {
   padding: 5px 0;
   margin: 0 auto;
   width: 6px;
-  background-color: #222;
+  background-color: #333;
   border-radius: 5px;
 }
 
@@ -580,8 +614,6 @@ a {
   grid-area: submit;
   width: 50%;
   margin: auto;
-  background-color: #222;
-  color: #fff;
 }
 
 #my-contact {
@@ -589,15 +621,10 @@ a {
 }
 
 #my-contact .contact-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
 #work-gallery .work-gallery-items {
@@ -688,7 +715,7 @@ a {
 }
 
 #main-footer {
-  background-color: #222;
+  background-color: #333;
   padding-top: 2rem;
 }
 
@@ -767,6 +794,34 @@ a {
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
     height: 40rem;
+  }
+  #main-contact .contact-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    padding: 0 0;
+  }
+  #my-contact .contact-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  #my-contact .contact-info div {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px #333 solid;
+  }
+  #my-contact .contact-info div:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

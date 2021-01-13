@@ -35,7 +35,7 @@
 		}
 	}
 
-	//? About page
+	//? About Page
 	// About me Section
 	#section-about-me {
 		.about-me {
@@ -52,6 +52,32 @@
 		.work-gallery-items {
 			flex-flow: column wrap;
 			height: 40rem;
+		}
+	}
+
+	// ? Contact Page
+	#main-contact {
+		.contact-me {
+			display: flex;
+			flex-flow: column nowrap;
+			padding: 0 0;
+		}
+	}
+
+	// My Contact
+	#my-contact {
+		.contact-info {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			div {
+				margin-bottom: 1.5rem;
+				border-bottom: 1px #333 solid;
+				&:last-child() {
+					border-bottom: none;
+					margin-bottom: 0;
+				}
+			}
 		}
 	}
 }

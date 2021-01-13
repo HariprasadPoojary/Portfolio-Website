@@ -104,6 +104,12 @@ a {
 			p.lead {
 				margin-top: 4rem;
 			}
+			.d-cv {
+				margin-top: 4rem;
+				a {
+					text-transform: uppercase;
+				}
+			}
 		}
 		&-b {
 			grid-area: introb;
@@ -308,8 +314,6 @@ a {
 			grid-area: submit;
 			width: 50%;
 			margin: auto; // center
-			background-color: $dark-color;
-			color: set-text-color($dark-color);
 		}
 		display: grid;
 		grid-template-areas:
@@ -325,9 +329,8 @@ a {
 // My Contact
 #my-contact {
 	.contact-info {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
 	}
 	background-color: $medium-color;
 }

@@ -72,14 +72,42 @@
 	background-color: $dark-color;
 }
 
-.btn {
-	cursor: pointer;
-	transition: box-shadow 180ms ease-in;
-	&:hover {
-		box-shadow: 0 0 0 3px coral;
-	}
+// ? Buttton
+%btn-shared {
+	display: inline-block;
 	border: none;
+	border-radius: 4px;
+	padding: 0.5rem 0.5rem;
+	transition: all 0.5s ease-in;
+	cursor: pointer;
 }
+.btn {
+	&-main {
+		@extend %btn-shared;
+		background-color: $main-color;
+		color: set-text-color($main-color);
+		&:hover {
+			box-shadow: 0 0 0 3px coral;
+		}
+	}
+	&-light {
+		@extend %btn-shared;
+		background-color: $light-color;
+		color: set-text-color($light-color);
+		&:hover {
+			box-shadow: 0 0 0 3px coral;
+		}
+	}
+	&-dark {
+		@extend %btn-shared;
+		background-color: $dark-color;
+		color: set-text-color($dark-color);
+		&:hover {
+			box-shadow: 0 0 0 3px coral;
+		}
+	}
+}
+
 // Icons
 .social {
 	a i {
