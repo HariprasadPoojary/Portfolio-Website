@@ -747,7 +747,7 @@ a {
   color: #f4f4f4;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 430px) {
   #main-header .head-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -761,7 +761,241 @@ a {
     padding: 1rem 0;
   }
   #main-about {
-    height: 73vh;
+    height: 68vh;
+        grid-template-areas: "introa" "introb";
+    text-align: center;
+  }
+  #main-about .intro-b {
+    display: none;
+  }
+  #main-experience .main-exp {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  #main-experience .awards {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  #section-about-me .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #section-about-me .about-me .about-info {
+    border: none;
+  }
+  #work-gallery .work-gallery-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    height: 40rem;
+  }
+  #main-contact .contact-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    padding: 0 0;
+  }
+  #my-contact .contact-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  #my-contact .contact-info div {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px #333 solid;
+  }
+  #my-contact .contact-info div:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 430px) {
+  #main-header .head-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #main-header .head-nav-menu li {
+    padding: 1rem 0;
+  }
+  #main-about {
+    height: 68vh;
+        grid-template-areas: "introa" "introb";
+    text-align: center;
+  }
+  #main-about .intro-b {
+    display: none;
+  }
+  #main-experience .main-exp {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  #main-experience .awards {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  #section-about-me .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #section-about-me .about-me .about-info {
+    border: none;
+  }
+  #work-gallery .work-gallery-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    height: 40rem;
+  }
+  #main-contact .contact-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    padding: 0 0;
+  }
+  #my-contact .contact-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  #my-contact .contact-info div {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px #333 solid;
+  }
+  #my-contact .contact-info div:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 430px) {
+  #main-header .head-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #main-header .head-nav-menu li {
+    padding: 1rem 0;
+  }
+  #main-about {
+    height: 68vh;
+        grid-template-areas: "introa" "introb";
+    text-align: center;
+  }
+  #main-about .intro-b {
+    display: none;
+  }
+  #main-experience .main-exp {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  #main-experience .awards {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  #section-about-me .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #section-about-me .about-me .about-info {
+    border: none;
+  }
+  #work-gallery .work-gallery-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    height: 40rem;
+  }
+  #main-contact .contact-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    padding: 0 0;
+  }
+  #my-contact .contact-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  #my-contact .contact-info div {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px #333 solid;
+  }
+  #my-contact .contact-info div:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 430px) {
+  #main-header .head-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #main-header .head-nav-menu li {
+    padding: 1rem 0;
+  }
+  #main-about {
+    height: 68vh;
         grid-template-areas: "introa" "introb";
     text-align: center;
   }

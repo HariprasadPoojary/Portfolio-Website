@@ -1,5 +1,5 @@
-// Smart phones
-@media (max-width: 500px) {
+// Mobile - L
+@media (max-width: 430px) {
 	//? Home page
 	// Header -> Navbar
 	#main-header {
@@ -15,7 +15,259 @@
 	}
 	// Header -> About
 	#main-about {
-		height: 73vh;
+		height: 68vh;
+		grid-template-areas:
+			"introa"
+			"introb";
+		text-align: center;
+		.intro-b {
+			display: none;
+		}
+	}
+
+	// Experience
+	#main-experience {
+		.main-exp {
+			grid-template-columns: repeat(1, 1fr);
+		}
+		.awards {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	//? About Page
+	// About me Section
+	#section-about-me {
+		.about-me {
+			display: flex;
+			flex-direction: column;
+			.about-info {
+				border: none;
+			}
+		}
+	}
+
+	// ? Work Page
+	#work-gallery {
+		.work-gallery-items {
+			flex-flow: column wrap;
+			height: 40rem;
+		}
+	}
+
+	// ? Contact Page
+	#main-contact {
+		.contact-me {
+			display: flex;
+			flex-flow: column nowrap;
+			padding: 0 0;
+		}
+	}
+
+	// My Contact
+	#my-contact {
+		.contact-info {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			div {
+				margin-bottom: 1.5rem;
+				border-bottom: 1px #333 solid;
+				&:last-child() {
+					border-bottom: none;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+// Mobile - L
+@media (max-width: 430px) {
+	//? Home page
+	// Header -> Navbar
+	#main-header {
+		.head-nav {
+			flex-direction: column;
+			align-items: center;
+		}
+		.head-nav-menu {
+			li {
+				padding: 1rem 0;
+			}
+		}
+	}
+	// Header -> About
+	#main-about {
+		height: 68vh;
+		grid-template-areas:
+			"introa"
+			"introb";
+		text-align: center;
+		.intro-b {
+			display: none;
+		}
+	}
+
+	// Experience
+	#main-experience {
+		.main-exp {
+			grid-template-columns: repeat(1, 1fr);
+		}
+		.awards {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	//? About Page
+	// About me Section
+	#section-about-me {
+		.about-me {
+			display: flex;
+			flex-direction: column;
+			.about-info {
+				border: none;
+			}
+		}
+	}
+
+	// ? Work Page
+	#work-gallery {
+		.work-gallery-items {
+			flex-flow: column wrap;
+			height: 40rem;
+		}
+	}
+
+	// ? Contact Page
+	#main-contact {
+		.contact-me {
+			display: flex;
+			flex-flow: column nowrap;
+			padding: 0 0;
+		}
+	}
+
+	// My Contact
+	#my-contact {
+		.contact-info {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			div {
+				margin-bottom: 1.5rem;
+				border-bottom: 1px #333 solid;
+				&:last-child() {
+					border-bottom: none;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+// Mobile - M
+@media (max-width: 430px) {
+	//? Home page
+	// Header -> Navbar
+	#main-header {
+		.head-nav {
+			flex-direction: column;
+			align-items: center;
+		}
+		.head-nav-menu {
+			li {
+				padding: 1rem 0;
+			}
+		}
+	}
+	// Header -> About
+	#main-about {
+		height: 68vh;
+		grid-template-areas:
+			"introa"
+			"introb";
+		text-align: center;
+		.intro-b {
+			display: none;
+		}
+	}
+
+	// Experience
+	#main-experience {
+		.main-exp {
+			grid-template-columns: repeat(1, 1fr);
+		}
+		.awards {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	//? About Page
+	// About me Section
+	#section-about-me {
+		.about-me {
+			display: flex;
+			flex-direction: column;
+			.about-info {
+				border: none;
+			}
+		}
+	}
+
+	// ? Work Page
+	#work-gallery {
+		.work-gallery-items {
+			flex-flow: column wrap;
+			height: 40rem;
+		}
+	}
+
+	// ? Contact Page
+	#main-contact {
+		.contact-me {
+			display: flex;
+			flex-flow: column nowrap;
+			padding: 0 0;
+		}
+	}
+
+	// My Contact
+	#my-contact {
+		.contact-info {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			div {
+				margin-bottom: 1.5rem;
+				border-bottom: 1px #333 solid;
+				&:last-child() {
+					border-bottom: none;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+// Mobile - S
+@media (max-width: 430px) {
+	//? Home page
+	// Header -> Navbar
+	#main-header {
+		.head-nav {
+			flex-direction: column;
+			align-items: center;
+		}
+		.head-nav-menu {
+			li {
+				padding: 1rem 0;
+			}
+		}
+	}
+	// Header -> About
+	#main-about {
+		height: 68vh;
 		grid-template-areas:
 			"introa"
 			"introb";
