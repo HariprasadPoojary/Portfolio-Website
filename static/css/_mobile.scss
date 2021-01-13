@@ -1,27 +1,19 @@
 //! Tablet
 @media (max-width: 780px) {
 	//? Home page
-	// Header -> Navbar
-	#main-header {
-		.head-nav {
-			flex-direction: column;
-			align-items: center;
-		}
-		.head-nav-menu {
-			li {
-				padding: 1rem 0;
-			}
-		}
-	}
 	// Header -> About
 	#main-about {
-		height: 68vh;
-		grid-template-areas:
-			"introa"
-			"introb";
-		text-align: center;
-		.intro-b {
-			display: none;
+		height: 78vh;
+		.intro-a {
+			p.lead {
+				margin-top: 2rem;
+			}
+			.d-cv {
+				margin-top: 2rem;
+				a {
+					text-transform: uppercase;
+				}
+			}
 		}
 	}
 
@@ -39,10 +31,11 @@
 	// About me Section
 	#section-about-me {
 		.about-me {
-			display: flex;
-			flex-direction: column;
-			.about-info {
-				border: none;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			gap: 1rem;
+			img {
+				width: 25rem;
 			}
 		}
 	}
@@ -50,36 +43,11 @@
 	// ? Work Page
 	#work-gallery {
 		.work-gallery-items {
-			flex-flow: column wrap;
-			height: 40rem;
+			height: 18rem;
 		}
 	}
 
 	// ? Contact Page
-	#main-contact {
-		.contact-me {
-			display: flex;
-			flex-flow: column nowrap;
-			padding: 0 0;
-		}
-	}
-
-	// My Contact
-	#my-contact {
-		.contact-info {
-			display: flex;
-			flex-direction: column;
-			text-align: center;
-			div {
-				margin-bottom: 1.5rem;
-				border-bottom: 1px #333 solid;
-				&:last-child() {
-					border-bottom: none;
-					margin-bottom: 0;
-				}
-			}
-		}
-	}
 }
 
 //! Mobile - L
