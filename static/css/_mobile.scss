@@ -31,8 +31,6 @@
 	// About me Section
 	#section-about-me {
 		.about-me {
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
 			gap: 1rem;
 			img {
 				width: 25rem;
@@ -59,11 +57,6 @@
 			flex-direction: column;
 			align-items: center;
 		}
-		.head-nav-menu {
-			li {
-				padding: 1rem 0;
-			}
-		}
 	}
 	// Header -> About
 	#main-about {
@@ -72,18 +65,19 @@
 			"introa"
 			"introb";
 		text-align: center;
+		.intro-a {
+			h2 {
+				font-size: 1.5rem;
+			}
+			div {
+				font-size: 1rem;
+			}
+			.lead {
+				font-size: 1rem;
+			}
+		}
 		.intro-b {
 			display: none;
-		}
-	}
-
-	// Experience
-	#main-experience {
-		.main-exp {
-			grid-template-columns: repeat(1, 1fr);
-		}
-		.awards {
-			grid-template-columns: repeat(1, 1fr);
 		}
 	}
 
@@ -93,8 +87,21 @@
 		.about-me {
 			display: flex;
 			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 			.about-info {
 				border: none;
+			}
+		}
+	}
+
+	#logo-skills {
+		.about-logos {
+			flex-flow: row wrap;
+			justify-content: center;
+			gap: 3rem;
+			img {
+				width: 10%;
 			}
 		}
 	}
@@ -139,79 +146,10 @@
 	//? Home page
 	// Header -> Navbar
 	#main-header {
-		.head-nav {
-			flex-direction: column;
-			align-items: center;
-		}
 		.head-nav-menu {
-			li {
-				padding: 1rem 0;
-			}
-		}
-	}
-	// Header -> About
-	#main-about {
-		height: 68vh;
-		grid-template-areas:
-			"introa"
-			"introb";
-		text-align: center;
-		.intro-b {
-			display: none;
-		}
-	}
-
-	// Experience
-	#main-experience {
-		.main-exp {
-			grid-template-columns: repeat(1, 1fr);
-		}
-		.awards {
-			grid-template-columns: repeat(1, 1fr);
-		}
-	}
-
-	//? About Page
-	// About me Section
-	#section-about-me {
-		.about-me {
-			display: flex;
-			flex-direction: column;
-			.about-info {
-				border: none;
-			}
-		}
-	}
-
-	// ? Work Page
-	#work-gallery {
-		.work-gallery-items {
-			flex-flow: column wrap;
-			height: 40rem;
-		}
-	}
-
-	// ? Contact Page
-	#main-contact {
-		.contact-me {
-			display: flex;
-			flex-flow: column nowrap;
-			padding: 0 0;
-		}
-	}
-
-	// My Contact
-	#my-contact {
-		.contact-info {
-			display: flex;
-			flex-direction: column;
-			text-align: center;
-			div {
-				margin-bottom: 1.5rem;
-				border-bottom: 1px #333 solid;
-				&:last-child() {
-					border-bottom: none;
-					margin-bottom: 0;
+			ul {
+				li {
+					padding: 1rem 1rem;
 				}
 			}
 		}
@@ -221,82 +159,27 @@
 //! Mobile - S
 @media (max-width: 330px) {
 	//? Home page
-	// Header -> Navbar
-	#main-header {
-		.head-nav {
-			flex-direction: column;
-			align-items: center;
-		}
-		.head-nav-menu {
-			li {
-				padding: 1rem 0;
-			}
-		}
-	}
 	// Header -> About
-	#main-about {
-		height: 68vh;
-		grid-template-areas:
-			"introa"
-			"introb";
-		text-align: center;
-		.intro-b {
-			display: none;
-		}
-	}
-
-	// Experience
-	#main-experience {
-		.main-exp {
-			grid-template-columns: repeat(1, 1fr);
-		}
-		.awards {
-			grid-template-columns: repeat(1, 1fr);
-		}
-	}
-
-	//? About Page
-	// About me Section
-	#section-about-me {
-		.about-me {
-			display: flex;
-			flex-direction: column;
-			.about-info {
-				border: none;
+	#main-header {
+		.head-nav-menu {
+			ul {
+				li {
+					padding: 1rem 0.6rem;
+				}
 			}
 		}
 	}
 
-	// ? Work Page
-	#work-gallery {
-		.work-gallery-items {
-			flex-flow: column wrap;
-			height: 40rem;
-		}
-	}
-
-	// ? Contact Page
-	#main-contact {
-		.contact-me {
-			display: flex;
-			flex-flow: column nowrap;
-			padding: 0 0;
-		}
-	}
-
-	// My Contact
-	#my-contact {
-		.contact-info {
-			display: flex;
-			flex-direction: column;
-			text-align: center;
+	#main-about {
+		.intro-a {
+			h2 {
+				font-size: 1.3rem;
+			}
 			div {
-				margin-bottom: 1.5rem;
-				border-bottom: 1px #333 solid;
-				&:last-child() {
-					border-bottom: none;
-					margin-bottom: 0;
-				}
+				font-size: 0.9rem;
+			}
+			.lead {
+				font-size: 0.9rem;
 			}
 		}
 	}

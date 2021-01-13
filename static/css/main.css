@@ -769,10 +769,6 @@ a {
         grid-template-columns: repeat(1, 1fr);
   }
   #section-about-me .about-me {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
   }
   #section-about-me .about-me img {
@@ -793,24 +789,22 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  #main-header .head-nav-menu li {
-    padding: 1rem 0;
-  }
   #main-about {
     height: 68vh;
         grid-template-areas: "introa" "introb";
     text-align: center;
   }
+  #main-about .intro-a h2 {
+    font-size: 1.5rem;
+  }
+  #main-about .intro-a div {
+    font-size: 1rem;
+  }
+  #main-about .intro-a .lead {
+    font-size: 1rem;
+  }
   #main-about .intro-b {
     display: none;
-  }
-  #main-experience .main-exp {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-  #main-experience .awards {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
   }
   #section-about-me .about-me {
     display: -webkit-box;
@@ -820,9 +814,28 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #section-about-me .about-me .about-info {
     border: none;
+  }
+  #logo-skills .about-logos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3rem;
+  }
+  #logo-skills .about-logos img {
+    width: 10%;
   }
   #work-gallery .work-gallery-items {
     -webkit-box-orient: vertical;
@@ -862,158 +875,23 @@ a {
 }
 
 @media (max-width: 380px) {
-  #main-header .head-nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #main-header .head-nav-menu li {
-    padding: 1rem 0;
-  }
-  #main-about {
-    height: 68vh;
-        grid-template-areas: "introa" "introb";
-    text-align: center;
-  }
-  #main-about .intro-b {
-    display: none;
-  }
-  #main-experience .main-exp {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-  #main-experience .awards {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-  #section-about-me .about-me {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #section-about-me .about-me .about-info {
-    border: none;
-  }
-  #work-gallery .work-gallery-items {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    height: 40rem;
-  }
-  #main-contact .contact-me {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    padding: 0 0;
-  }
-  #my-contact .contact-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-  }
-  #my-contact .contact-info div {
-    margin-bottom: 1.5rem;
-    border-bottom: 1px #333 solid;
-  }
-  #my-contact .contact-info div:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
+  #main-header .head-nav-menu ul li {
+    padding: 1rem 1rem;
   }
 }
 
 @media (max-width: 330px) {
-  #main-header .head-nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  #main-header .head-nav-menu ul li {
+    padding: 1rem 0.6rem;
   }
-  #main-header .head-nav-menu li {
-    padding: 1rem 0;
+  #main-about .intro-a h2 {
+    font-size: 1.3rem;
   }
-  #main-about {
-    height: 68vh;
-        grid-template-areas: "introa" "introb";
-    text-align: center;
+  #main-about .intro-a div {
+    font-size: 0.9rem;
   }
-  #main-about .intro-b {
-    display: none;
-  }
-  #main-experience .main-exp {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-  #main-experience .awards {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-  #section-about-me .about-me {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #section-about-me .about-me .about-info {
-    border: none;
-  }
-  #work-gallery .work-gallery-items {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    height: 40rem;
-  }
-  #main-contact .contact-me {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    padding: 0 0;
-  }
-  #my-contact .contact-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-  }
-  #my-contact .contact-info div {
-    margin-bottom: 1.5rem;
-    border-bottom: 1px #333 solid;
-  }
-  #my-contact .contact-info div:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
+  #main-about .intro-a .lead {
+    font-size: 0.9rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
