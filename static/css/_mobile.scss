@@ -1,26 +1,57 @@
 // Smart phones
 @media (max-width: 500px) {
-	// shape divider
-	.custom-shape-divider-bottom-1601119354 svg {
-		width: calc(190% + 1.3px);
-		height: 120px;
-	}
+	//? Home page
 	// Header -> Navbar
 	#main-header {
 		.head-nav {
 			flex-direction: column;
 			align-items: center;
 		}
+		.head-nav-menu {
+			li {
+				padding: 1rem 0;
+			}
+		}
 	}
 	// Header -> About
 	#main-about {
-		// padding: 1.5rem 1.5rem 8.6rem 1.5rem;
+		height: 73vh;
 		grid-template-areas:
 			"introa"
-			"introc";
+			"introb";
 		text-align: center;
 		.intro-b {
 			display: none;
+		}
+	}
+
+	// Experience
+	#main-experience {
+		.main-exp {
+			grid-template-columns: repeat(1, 1fr);
+		}
+		.awards {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	//? About page
+	// About me Section
+	#section-about-me {
+		.about-me {
+			display: flex;
+			flex-direction: column;
+			.about-info {
+				border: none;
+			}
+		}
+	}
+
+	// ? Work Page
+	#work-gallery {
+		.work-gallery-items {
+			flex-flow: column wrap;
+			height: 40rem;
 		}
 	}
 }

@@ -721,10 +721,6 @@ a {
 }
 
 @media (max-width: 500px) {
-  .custom-shape-divider-bottom-1601119354 svg {
-    width: calc(190% + 1.3px);
-    height: 120px;
-  }
   #main-header .head-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -734,12 +730,43 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
+  #main-header .head-nav-menu li {
+    padding: 1rem 0;
+  }
   #main-about {
-        grid-template-areas: "introa" "introc";
+    height: 73vh;
+        grid-template-areas: "introa" "introb";
     text-align: center;
   }
   #main-about .intro-b {
     display: none;
+  }
+  #main-experience .main-exp {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  #main-experience .awards {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  #section-about-me .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #section-about-me .about-me .about-info {
+    border: none;
+  }
+  #work-gallery .work-gallery-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    height: 40rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
