@@ -1,5 +1,5 @@
 //! Tablet
-@media (max-width: 780px) {
+@media only screen and (max-width: 780px) {
 	//? Home page
 	// Header -> About
 	#main-about {
@@ -49,7 +49,7 @@
 }
 
 //! Mobile - L
-@media (max-width: 440px) {
+@media only screen and (max-width: 440px) {
 	//? Home page
 	// Header -> Navbar
 	#main-header {
@@ -142,7 +142,7 @@
 }
 
 //! Mobile - M
-@media (max-width: 380px) {
+@media only screen and (max-width: 380px) {
 	//? Home page
 	// Header -> Navbar
 	#main-header {
@@ -157,7 +157,7 @@
 }
 
 //! Mobile - S
-@media (max-width: 330px) {
+@media only screen and (max-width: 330px) {
 	//? Home page
 	// Header -> About
 	#main-header {
@@ -180,6 +180,72 @@
 			}
 			.lead {
 				font-size: 0.9rem;
+			}
+		}
+	}
+}
+
+// ! Hero height setup
+@media only screen and (max-height: 1370px) {
+	// Header -> About
+	#main-about {
+		height: 89.9vh;
+	}
+}
+@media only screen and (max-height: 1030px) {
+	// Header -> About
+	#main-about {
+		height: 86.6vh;
+	}
+}
+@media only screen and (max-height: 830px) {
+	// Header -> About
+	#main-about {
+		height: 75.8vh;
+	}
+}
+@media only screen and (max-height: 815px) {
+	// Header -> About
+	#main-about {
+		height: 75.5vh;
+	}
+}
+@media only screen and (max-height: 740px) {
+	// Header -> About
+	#main-about {
+		height: 73vh;
+	}
+}
+@media only screen and (max-height: 650px) {
+	// Header -> About
+	#main-about {
+		height: 69vh;
+	}
+}
+@media only screen and (max-height: 670px) {
+	// Header -> About
+	#main-about {
+		height: 69.8vh;
+	}
+}
+
+@media only screen and (max-height: 570px) {
+	// Header -> About
+	#main-about {
+		height: 64.8vh;
+		.intro-a {
+			h2 {
+				font-size: 1rem;
+			}
+			div {
+				font-size: 0.9rem;
+			}
+			.lead {
+				font-size: 0.9rem;
+				margin: 1rem 0;
+			}
+			.d-cv {
+				margin: 4px 0;
 			}
 		}
 	}

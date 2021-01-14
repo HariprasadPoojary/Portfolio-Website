@@ -747,7 +747,7 @@ a {
   color: #f4f4f4;
 }
 
-@media (max-width: 780px) {
+@media only screen and (max-width: 780px) {
   #main-about {
     height: 78vh;
   }
@@ -779,7 +779,7 @@ a {
   }
 }
 
-@media (max-width: 440px) {
+@media only screen and (max-width: 440px) {
   #main-header .head-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -874,13 +874,13 @@ a {
   }
 }
 
-@media (max-width: 380px) {
+@media only screen and (max-width: 380px) {
   #main-header .head-nav-menu ul li {
     padding: 1rem 1rem;
   }
 }
 
-@media (max-width: 330px) {
+@media only screen and (max-width: 330px) {
   #main-header .head-nav-menu ul li {
     padding: 1rem 0.6rem;
   }
@@ -892,6 +892,67 @@ a {
   }
   #main-about .intro-a .lead {
     font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-height: 1370px) {
+  #main-about {
+    height: 89.9vh;
+  }
+}
+
+@media only screen and (max-height: 1030px) {
+  #main-about {
+    height: 86.6vh;
+  }
+}
+
+@media only screen and (max-height: 830px) {
+  #main-about {
+    height: 75.8vh;
+  }
+}
+
+@media only screen and (max-height: 815px) {
+  #main-about {
+    height: 75.5vh;
+  }
+}
+
+@media only screen and (max-height: 740px) {
+  #main-about {
+    height: 73vh;
+  }
+}
+
+@media only screen and (max-height: 650px) {
+  #main-about {
+    height: 69vh;
+  }
+}
+
+@media only screen and (max-height: 670px) {
+  #main-about {
+    height: 69.8vh;
+  }
+}
+
+@media only screen and (max-height: 570px) {
+  #main-about {
+    height: 64.8vh;
+  }
+  #main-about .intro-a h2 {
+    font-size: 1rem;
+  }
+  #main-about .intro-a div {
+    font-size: 0.9rem;
+  }
+  #main-about .intro-a .lead {
+    font-size: 0.9rem;
+    margin: 1rem 0;
+  }
+  #main-about .intro-a .d-cv {
+    margin: 4px 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
