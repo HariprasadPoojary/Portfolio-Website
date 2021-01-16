@@ -10,6 +10,14 @@
 {% block all-content %}
 <div class="border-nav"></div>
 <!-- Contact me Form -->
+<!-- prettier-ignore -->
+{% if email_res %}
+<div class="email-conf">
+	<h2 class="section-title py-2">Thank you!</h2>
+	<div class="bottom-line"></div>
+	<p class="lead text-center">{{ email_res }}</p>
+</div>
+{% else %}
 <section id="main-contact">
 	<div class="container py-2 px-2">
 		<h2 class="section-title py-2">Contact Me</h2>
@@ -29,6 +37,7 @@
 		</form>
 	</div>
 </section>
+{% endif %}
 <!-- My Contact -->
 <section id="my-contact">
 	<div class="container py-2">
