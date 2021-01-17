@@ -17,6 +17,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# Heroku
+import django_heroku
+
+is_prod = os.environ.get("IS_HEROKU", None)
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -25,11 +30,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("SECRET_KEY")
+if is_prod:
+    SECRET_KEY = os.environ.get("SECRET_KEY")
+else:
+    SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1", "hariprasad.herokuapp.com"]
 
 
 # Application definition
@@ -42,7 +50,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # My app
-    "base",
+    "base.apps.BaseConfig",
 ]
 
 MIDDLEWARE = [
@@ -53,6 +61,8 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    # Serve static files on Heroku
+    "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
 ROOT_URLCONF = "hari_portfolio.urls"
@@ -134,7 +144,23 @@ EMAIL_HOST = "smtp.gmail.com"
 # EMAIL_HOST = "smtp.office365.com"
 EMAIL_PORT = "587"
 EMAIL_HOST_USER = "hari.j.wayne@gmail.com"
-EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD_GMAIL")
+if is_prod:
+    EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD_GMAIL")
+else:
+    EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD_GMAIL")
 EMAIL_USE_TLS = True
 # EMAIL_FROM = "hari.j.wayne@gmail.com"
 # EMAIL_USE_SSL = False
+
+# ? Heroku
+# Static file settings
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
+
+# Postgresql connection on heroku
+import dj_database_url
+
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES["default"].update(db_from_env)
