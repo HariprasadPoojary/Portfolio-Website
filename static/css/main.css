@@ -547,7 +547,7 @@ a {
 #main-contact .contact-me {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "name email" "subject phone" "message message" "submit submit";
+      grid-template-areas: "name email" "subject phone" ". phone-error" "message message" "submit submit";
   gap: 1.2rem;
   margin-bottom: 2rem;
 }
@@ -599,7 +599,7 @@ a {
 }
 
 #main-contact .contact-me #id_message {
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: message;
@@ -608,12 +608,23 @@ a {
 }
 
 #main-contact .contact-me input[type="submit"] {
-  -ms-grid-row: 4;
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: submit;
   width: 50%;
   margin: auto;
+}
+
+#main-contact .contact-me #phone-error {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: phone-error;
+  width: 100%;
+  margin: auto;
+  background-color: #f4f4f4;
+  height: 2rem;
+  color: coral;
 }
 
 #my-contact {

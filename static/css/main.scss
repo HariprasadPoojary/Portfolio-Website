@@ -315,10 +315,19 @@ a {
 			width: 50%;
 			margin: auto; // center
 		}
+		#phone-error {
+			grid-area: phone-error;
+			width: 100%;
+			margin: auto; // center
+			background-color: $light-color;
+			height: 2rem;
+			color: $secondary-color;
+		}
 		display: grid;
 		grid-template-areas:
 			"name email"
 			"subject phone"
+			". phone-error"
 			"message message"
 			"submit submit";
 		gap: 1.2rem;

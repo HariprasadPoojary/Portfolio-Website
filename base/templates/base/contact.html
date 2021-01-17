@@ -31,6 +31,12 @@
 			{{contact_form.email}}
 			{{contact_form.subject}}
 			{{contact_form.phone}}
+			{% if phone_error %}
+			<div id="phone-error">
+				<p class="lead text-center">{{phone_error}}</p>
+			</div>
+			<!-- prettier-ignore -->
+			{% endif %} 
 			{{contact_form.message}}
 
 			<input type="submit" value="Submit" class="btn-dark" />
