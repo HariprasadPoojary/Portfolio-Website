@@ -186,6 +186,7 @@ a {
   background-color: #f5f5f5;
   background-color: #58b19f;
   background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232c3a47' fill-opacity='0.42' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  position: relative;
 }
 
 #main-header .head-nav {
@@ -759,9 +760,6 @@ a {
 }
 
 @media only screen and (max-width: 780px) {
-  #main-about {
-    height: 78vh;
-  }
   #main-about .intro-a p.lead {
     margin-top: 2rem;
   }
@@ -801,7 +799,6 @@ a {
             align-items: center;
   }
   #main-about {
-    height: 68vh;
         grid-template-areas: "introa" "introb";
     text-align: center;
   }
@@ -903,61 +900,6 @@ a {
   }
   #main-about .intro-a .lead {
     font-size: 0.9rem;
-  }
-}
-
-@media only screen and (max-height: 1370px) and (max-device-width: 1030px) {
-  #main-about {
-    height: 89.9vh;
-  }
-}
-
-@media only screen and (max-height: 1030px) and (max-device-width: 770px) {
-  #main-about {
-    height: 86.6vh;
-  }
-}
-
-@media only screen and (max-height: 830px) and (max-device-width: 415px) {
-  #main-about {
-    height: 75.8vh;
-  }
-}
-
-@media only screen and (max-height: 815px) and (max-device-width: 415px), (max-device-width: 380px) {
-  #main-about {
-    height: 75.5vh;
-  }
-}
-
-@media only screen and (max-height: 740px) and (max-device-width: 415px) {
-  #main-about {
-    height: 73vh;
-  }
-}
-
-@media only screen and (max-height: 650px) and (max-device-width: 370px) {
-  #main-about {
-    height: 69vh;
-  }
-}
-
-@media only screen and (max-height: 570px) and (max-device-width: 550px) {
-  #main-about {
-    height: 64.8vh;
-  }
-  #main-about .intro-a h2 {
-    font-size: 1rem;
-  }
-  #main-about .intro-a div {
-    font-size: 0.9rem;
-  }
-  #main-about .intro-a .lead {
-    font-size: 0.9rem;
-    margin: 1rem 0;
-  }
-  #main-about .intro-a .d-cv {
-    margin: 4px 0;
   }
 }
 

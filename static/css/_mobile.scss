@@ -3,7 +3,6 @@
 	//? Home page
 	// Header -> About
 	#main-about {
-		height: 78vh;
 		.intro-a {
 			p.lead {
 				margin-top: 2rem;
@@ -60,7 +59,6 @@
 	}
 	// Header -> About
 	#main-about {
-		height: 68vh;
 		grid-template-areas:
 			"introa"
 			"introb";
@@ -180,72 +178,6 @@
 			}
 			.lead {
 				font-size: 0.9rem;
-			}
-		}
-	}
-}
-
-// ! Hero height setup
-@media only screen and (max-height: 1370px) and (max-device-width: 1030px) {
-	// Header -> About
-	#main-about {
-		height: 89.9vh;
-	}
-}
-@media only screen and (max-height: 1030px) and (max-device-width: 770px) {
-	// Header -> About
-	#main-about {
-		height: 86.6vh;
-	}
-}
-// Pixel 2 XL
-@media only screen and (max-height: 830px) and (max-device-width: 415px) {
-	// Header -> About
-	#main-about {
-		height: 75.8vh;
-	}
-}
-// iPhone X
-@media only screen and (max-height: 815px) and (max-device-width: 415px),
-	(max-device-width: 380px) {
-	// Header -> About
-	#main-about {
-		height: 75.5vh;
-	}
-}
-// Pixel 2 & iPhone 6/7/8 & iPhone 6/7/8 Plus
-@media only screen and (max-height: 740px) and (max-device-width: 415px) {
-	// Header -> About
-	#main-about {
-		height: 73vh;
-	}
-}
-
-// Moto G4 & Galaxy S5
-@media only screen and (max-height: 650px) and (max-device-width: 370px) {
-	// Header -> About
-	#main-about {
-		height: 69vh;
-	}
-}
-// iPhone 5/SE
-@media only screen and (max-height: 570px) and (max-device-width: 550px) {
-	// Header -> About
-	#main-about {
-		height: 64.8vh;
-		.intro-a {
-			h2 {
-				font-size: 1rem;
-			}
-			div {
-				font-size: 0.9rem;
-			}
-			.lead {
-				font-size: 0.9rem;
-				margin: 1rem 0;
-			}
-			.d-cv {
-				margin: 4px 0;
 			}
 		}
 	}
