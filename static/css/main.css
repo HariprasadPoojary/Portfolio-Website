@@ -249,7 +249,7 @@ a {
       grid-template-areas: "introa introb";
   gap: 2rem;
   margin-top: 4rem;
-  height: 82vh;
+  height: 70vh;
 }
 
 #main-about .intro-a {
