@@ -788,7 +788,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 570px) {
   #main-header .head-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
