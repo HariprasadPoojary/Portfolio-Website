@@ -270,6 +270,11 @@ a {
   margin-top: 4rem;
 }
 
+#main-about .intro-a p.lead2 {
+  font-size: 1rem;
+  margin-top: 1px;
+}
+
 #main-about .intro-a .d-cv {
   margin-top: 4rem;
 }
@@ -799,8 +804,11 @@ a {
             align-items: center;
   }
   #main-about {
-        grid-template-areas: "introa" "introb";
+        grid-template-areas: "introb" "introa";
     text-align: center;
+    gap: 10px;
+    margin-top: 0;
+    padding-top: 5px;
   }
   #main-about .intro-a h2 {
     font-size: 1.5rem;
@@ -808,11 +816,23 @@ a {
   #main-about .intro-a div {
     font-size: 1rem;
   }
-  #main-about .intro-a .lead {
+  #main-about .intro-a p.lead {
     font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 2px;
+  }
+  #main-about .intro-a p.lead2 {
+    font-size: 1rem;
+    margin-top: 1px;
+  }
+  #main-about .intro-a .d-cv {
+    margin-top: 5px;
   }
   #main-about .intro-b {
-    display: none;
+    height: 40px;
+  }
+  #main-about .intro-b img {
+    width: 150px;
   }
   #section-about-me .about-me {
     display: -webkit-box;
@@ -900,6 +920,12 @@ a {
   }
   #main-about .intro-a .lead {
     font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-device-height: 700px) {
+  #main-about {
+    height: 95vh;
   }
 }
 

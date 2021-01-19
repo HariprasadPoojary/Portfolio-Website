@@ -60,9 +60,12 @@
 	// Header -> About
 	#main-about {
 		grid-template-areas:
-			"introa"
-			"introb";
+			"introb"
+			"introa";
 		text-align: center;
+		gap: 10px;
+		margin-top: 0;
+		padding-top: 5px;
 		.intro-a {
 			h2 {
 				font-size: 1.5rem;
@@ -70,12 +73,24 @@
 			div {
 				font-size: 1rem;
 			}
-			.lead {
+			p.lead {
 				font-size: 1rem;
+				margin-top: 5px;
+				margin-bottom: 2px;
+			}
+			p.lead2 {
+				font-size: 1rem;
+				margin-top: 1px;
+			}
+			.d-cv {
+				margin-top: 5px;
 			}
 		}
 		.intro-b {
-			display: none;
+			img {
+				width: 150px;
+			}
+			height: 40px;
 		}
 	}
 
@@ -180,6 +195,13 @@
 				font-size: 0.9rem;
 			}
 		}
+	}
+}
+
+// ! Adjust of hero where device height is less
+@media only screen and (max-device-height: 700px) {
+	#main-about {
+		height: 95vh;
 	}
 }
 

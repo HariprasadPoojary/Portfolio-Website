@@ -23,7 +23,8 @@
 			content="This is the homepage of Hariprasad Poojary. Web Developer in the works, has an inclination for Python, Django and Batman"
 		/>
 		<meta
-			property="og:image"
+			property="og:image:secure_url"
+			itemprop="image"
 			content="https://raw.githubusercontent.com/HariprasadPoojary/Portfolio-Website/main/static/image/hariprasad-portfolio.png"
 		/>
 
@@ -46,6 +47,16 @@
 			src="https://kit.fontawesome.com/5cec223499.js"
 			crossorigin="anonymous"
 		></script>
+		<link
+			rel="shortcut icon"
+			href="{% static '/image/favicon.ico' %}"
+			type="image/x-icon"
+		/>
+		<link
+			rel="icon"
+			href="{% static '/image/favicon.ico' %}"
+			type="image/x-icon"
+		/>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Engagement&family=Noto+Sans+TC&family=Quicksand&display=swap"
 			rel="stylesheet"
@@ -97,10 +108,11 @@
 									></a>
 								</div>
 								<p class="lead">
-									Lorem ipsum dolor sit, amet consectetur
-									adipisicing elit. Repellat quasi tempore et
-									earum dolorem sunt expedita ducimus
-									praesentium error impedit?
+									Web Developer in the works, has an
+									inclination for Python, Django.
+								</p>
+								<p class="lead lead2">
+									I love building web pages and applications.
 								</p>
 								<div class="d-cv">
 									<a
