@@ -268,10 +268,10 @@ a {
 
 #main-about .intro-a p.lead {
   margin-top: 4rem;
+  margin-bottom: 2px;
 }
 
 #main-about .intro-a p.lead2 {
-  font-size: 1rem;
   margin-top: 1px;
 }
 
