@@ -356,23 +356,29 @@ a {
 		flex-flow: row wrap;
 		justify-content: center;
 		height: 24rem;
-		gap: 1rem;
+		gap: 1.5rem;
 		margin-bottom: 1rem;
 		.row-1 {
 			&:nth-child(even) {
-				background-color: #f2ad4e;
+				background-color: $card-1-color;
+				color: set-text-color($card-1-color);
 			}
 			&:nth-child(odd) {
-				background-color: #fff1ad;
+				background-color: $card-2-color;
+				color: set-text-color($card-2-color);
 			}
+			box-shadow: $shadow-light;
 		}
 		.row-2 {
 			&:nth-child(odd) {
-				background-color: #f2ad4e;
+				background-color: $card-1-color;
+				color: set-text-color($card-1-color);
 			}
 			&:nth-child(even) {
-				background-color: #fff1ad;
+				background-color: $card-2-color;
+				color: set-text-color($card-2-color);
 			}
+			box-shadow: $shadow-light;
 		}
 	}
 	.col {
@@ -383,6 +389,8 @@ a {
 		transition: all 0.8s;
 		z-index: 1;
 		img {
+			margin: 1rem;
+			box-shadow: $shadow-light;
 			width: 70%;
 			height: 70%;
 			position: absolute;
@@ -394,7 +402,8 @@ a {
 		.caption {
 			margin: 1rem 0;
 			max-width: 14rem;
-			font-size: small;
+			font-size: 0.96rem;
+			font-weight: 800;
 			position: absolute;
 			top: 4;
 			left: 3;
@@ -412,7 +421,7 @@ a {
 
 		//
 		&:hover {
-			flex-grow: 2.5;
+			flex-grow: 1.5;
 			h2 {
 				text-align: left;
 			}
