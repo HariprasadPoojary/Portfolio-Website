@@ -123,7 +123,17 @@
 	#work-gallery {
 		.work-gallery-items {
 			flex-flow: column wrap;
-			height: 40rem;
+			height: 60rem;
+		}
+
+		.col {
+			&:hover {
+				flex-grow: 2;
+			}
+			h2 {
+				text-align: center;
+				font-size: 1rem;
+			}
 		}
 	}
 

@@ -351,6 +351,9 @@ a {
 
 // ? Work Page
 #work-gallery {
+	.container {
+		padding: 2rem 2rem;
+	}
 	.work-gallery-items {
 		display: flex;
 		flex-flow: row wrap;
@@ -390,20 +393,20 @@ a {
 		z-index: 1;
 		img {
 			margin: 1rem;
-			box-shadow: $shadow-light;
-			width: 70%;
-			height: 70%;
+			width: 65%;
+			height: 65%;
 			position: absolute;
 			right: 0;
 			bottom: 0;
 			z-index: 2;
+			box-shadow: $shadow-light;
 		}
 
 		.caption {
 			margin: 1rem 0;
 			max-width: 14rem;
 			font-size: 0.96rem;
-			font-weight: 800;
+			font-weight: 700;
 			position: absolute;
 			top: 4;
 			left: 3;
@@ -419,7 +422,7 @@ a {
 			margin-top: 20px;
 		}
 
-		//
+		// hover effect
 		&:hover {
 			flex-grow: 1.5;
 			h2 {
@@ -430,6 +433,52 @@ a {
 			}
 		}
 	}
+	// Flip Gallery
+	// .flip {
+	// 	.card-container {
+	// 		height: 24rem;
+	// 		width: 100%;
+	// 		display: flex;
+	// 		justify-content: center;
+	// 		align-items: center;
+	// 		gap: 2rem;
+	// 		.card {
+	// 			height: 100%;
+	// 			width: 100%;
+	// 			transition: transform 1s ease-in-out;
+	// 			transform-style: preserve-3d;
+	// 			&:hover {
+	// 				transform: rotateY(180deg);
+	// 			}
+	// 			figure {
+	// 				height: 100%;
+	// 				width: 100%;
+	// 				position: absolute;
+	// 				margin: 0;
+	// 				border-radius: 8px;
+	// 				display: flex;
+	// 				flex-direction: column;
+	// 				justify-content: center;
+	// 				align-items: center;
+	// 				box-shadow: $shadow-light;
+	// 			}
+	// 			.front {
+	// 				background-color: $card-1-color;
+	// 				color: set-text-color($card-1-color);
+	// 				img {
+	// 					height: 90%;
+	// 					width: 100%;
+	// 					padding: 10px;
+	// 				}
+	// 			}
+	// 			.back {
+	// 				background-color: $card-2-color;
+	// 				color: set-text-color($card-2-color);
+	// 				transform: rotateY(180deg);
+	// 			}
+	// 		}
+	// 	}
+	// }
 }
 
 // Footer
