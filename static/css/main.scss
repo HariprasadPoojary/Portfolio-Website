@@ -33,51 +33,51 @@ a {
 //? Home page
 // Header -> Navbar
 #main-header {
-	background-color: #f5f5f5;
-	background-color: #58b19f;
-	background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232c3a47' fill-opacity='0.42' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+	background-color: $hero-color;
+	background-image: $hero-image;
 	position: relative;
-	.head {
-		&-nav {
-			display: flex;
-			justify-content: space-between;
-			// padding: 0.5rem 1rem;
-			// position: fixed;
-			// top: 0;
-			// left: 0;
-			// right: 0;
-			// backdrop-filter: blur(5px);
-			&-logo a {
-				font-family: $font-logo;
-				font-size: 2.5rem;
-				padding: 1rem;
-				color: $dark-color;
-				font-weight: 700;
-				transition: all 0.3s ease-in-out;
-				&:hover {
-					font-size: 2.8rem;
-					font-weight: 900;
-					color: $secondary-color;
-				}
+	.head-nav {
+		display: flex;
+		justify-content: space-between;
+		padding: 0.5rem 1rem;
+		
+		// position: fixed;
+		// top: 0;
+		// left: 0;
+		// right: 0;
+		// z-index: 1;
+		// backdrop-filter: blur(5px);
+
+		&-logo a {
+			font-family: $font-logo;
+			font-size: 2.5rem;
+			padding: 1rem;
+			color: $dark-color;
+			font-weight: 700;
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				font-size: 2.8rem;
+				font-weight: 900;
+				color: $secondary-color;
 			}
-			&-menu ul {
-				display: flex;
-				li {
-					padding: 1rem 1.5rem;
-					a {
-						text-transform: uppercase;
-						color: $dark-color;
-						font-size: large;
-						font-weight: bolder;
-						border-bottom: transparent solid 3px;
-						padding-bottom: 0.5rem;
-						transition: border-bottom 0.5s ease-in-out;
-						&:hover {
-							border-bottom-color: #2c3a47;
-						}
-						&.current {
-							border-bottom-color: $secondary-color;
-						}
+		}
+		&-menu ul {
+			display: flex;
+			li {
+				padding: 1rem 1.5rem;
+				a {
+					text-transform: uppercase;
+					color: $dark-color;
+					font-size: large;
+					font-weight: bolder;
+					border-bottom: transparent solid 3px;
+					padding-bottom: 0.5rem;
+					transition: border-bottom 0.5s ease-in-out;
+					&:hover {
+						border-bottom-color: #2c3a47;
+					}
+					&.current {
+						border-bottom-color: $secondary-color;
 					}
 				}
 			}
@@ -89,8 +89,8 @@ a {
 #main-about {
 	display: grid;
 	grid-template-areas: "introa introb";
-	// "introc introb";
 	gap: 2rem;
+	position: relative;
 	margin-top: 4rem;
 	height: 70vh;
 	.intro {
