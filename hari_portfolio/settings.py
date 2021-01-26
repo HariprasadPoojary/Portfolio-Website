@@ -30,13 +30,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+# SECURITY WARNING: don't run with debug turned on in production!
 if is_prod:
     SECRET_KEY = os.environ.get("SECRET_KEY")
     DEBUG = False
 else:
     SECRET_KEY = os.getenv("SECRET_KEY")
     DEBUG = True
-# SECURITY WARNING: don't run with debug turned on in production!
 
 
 ALLOWED_HOSTS = ["127.0.0.1", "hariprasad.herokuapp.com"]
@@ -158,11 +158,26 @@ EMAIL_USE_TLS = True
 # Static file settings
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
-# Activate Django-Heroku.
-django_heroku.settings(locals())
-
 # Postgresql connection on heroku
 import dj_database_url
 
 db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES["default"].update(db_from_env)
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
+
+# Logging
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {"console": {"class": "logging.StreamHandler",},},
+    "root": {"handlers": ["console"], "level": "WARNING",},
+    "loggers": {
+        "django": {
+            "handlers": ["console"],
+            "level": os.getenv("DJANGO_LOG_LEVEL", "INFO"),
+            "propagate": False,
+        },
+    },
+}
