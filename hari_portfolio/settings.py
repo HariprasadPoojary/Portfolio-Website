@@ -38,6 +38,7 @@ else:
     SECRET_KEY = os.getenv("SECRET_KEY")
     DEBUG = True
 
+DEBUG = False
 
 ALLOWED_HOSTS = ["127.0.0.1", "hariprasad.herokuapp.com"]
 
@@ -157,6 +158,7 @@ EMAIL_USE_TLS = True
 # ? Heroku
 # Static file settings
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATICFILES_STORAGE = "hari_portfolio.storage.WhiteNoiseStaticFilesStorage"
 
 # Postgresql connection on heroku
 import dj_database_url
