@@ -1,0 +1,243 @@
+//! Tablet
+@media only screen and (max-width: 780px) {
+	//? Home page
+	// Header -> About
+	#main-about {
+		.intro-a {
+			p.lead {
+				margin-top: 2rem;
+			}
+			.d-cv {
+				margin-top: 2rem;
+				a {
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+
+	// Experience
+	#main-experience {
+		.main-exp {
+			grid-template-columns: repeat(1, 1fr);
+		}
+		.awards {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	//? About Page
+	// About me Section
+	#section-about-me {
+		.about-me {
+			gap: 1rem;
+			img {
+				width: 25rem;
+			}
+		}
+	}
+
+	// ? Work Page
+	#work-gallery {
+		.work-gallery-items {
+			height: 18rem;
+		}
+	}
+
+	// ? Contact Page
+}
+
+//! Mobile - L
+@media only screen and (max-width: 570px) {
+	//? Home page
+	// Header -> Navbar
+	#main-header {
+		.head-nav {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	// Header -> About
+	#main-about {
+		grid-template-areas:
+			"introb"
+			"introa";
+		text-align: center;
+		gap: 10px;
+		margin-top: 0;
+		padding-top: 5px;
+		.intro-a {
+			h2 {
+				font-size: 1.5rem;
+			}
+			div {
+				font-size: 1rem;
+			}
+			p.lead {
+				font-size: 1rem;
+				margin-top: 5px;
+				margin-bottom: 2px;
+			}
+			p.lead2 {
+				font-size: 1rem;
+				margin-top: 1px;
+			}
+			.d-cv {
+				margin-top: 5px;
+			}
+		}
+		.intro-b {
+			img {
+				width: 150px;
+			}
+			height: 40px;
+		}
+	}
+
+	//? About Page
+	// About me Section
+	#section-about-me {
+		.about-me {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			.about-info {
+				border: none;
+			}
+		}
+	}
+
+	#logo-skills {
+		.about-logos {
+			flex-flow: row wrap;
+			justify-content: center;
+			gap: 3rem;
+			img {
+				width: 10%;
+			}
+		}
+	}
+
+	// ? Work Page
+	#work-gallery {
+		.work-gallery-items {
+			flex-flow: column wrap;
+			height: 60rem;
+		}
+
+		.col {
+			&:hover {
+				flex-grow: 2;
+			}
+			h2 {
+				text-align: center;
+				font-size: 1rem;
+			}
+		}
+	}
+
+	// ? Contact Page
+	#main-contact {
+		.contact-me {
+			display: flex;
+			flex-flow: column nowrap;
+			padding: 0 0;
+		}
+	}
+
+	// My Contact
+	#my-contact {
+		.contact-info {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			div {
+				margin-bottom: 1.5rem;
+				border-bottom: 1px #333 solid;
+				&:last-child() {
+					border-bottom: none;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+//! Mobile - M
+@media only screen and (max-width: 380px) {
+	//? Home page
+	// Header -> Navbar
+	#main-header {
+		.head-nav-menu {
+			ul {
+				li {
+					padding: 1rem 1rem;
+				}
+			}
+		}
+	}
+}
+
+//! Mobile - S
+@media only screen and (max-width: 330px) {
+	//? Home page
+	// Header -> About
+	#main-header {
+		.head-nav-menu {
+			ul {
+				li {
+					padding: 1rem 0.6rem;
+				}
+			}
+		}
+	}
+
+	#main-about {
+		.intro-a {
+			h2 {
+				font-size: 1.3rem;
+			}
+			div {
+				font-size: 0.9rem;
+			}
+			.lead {
+				font-size: 0.9rem;
+			}
+		}
+	}
+}
+
+// ! Adjust of hero where device height is less
+@media only screen and (max-device-height: 700px) {
+	#main-about {
+		height: 95vh;
+	}
+}
+
+// ! Timeline
+@media (max-width: 900px) {
+	#timeline ul li div {
+		width: 200px;
+	}
+	#timeline ul li:nth-child(even) div {
+		left: -248px;
+	}
+}
+
+@media (max-width: 600px) {
+	#timeline ul li {
+		margin-left: 20px;
+	}
+	#timeline ul li div {
+		width: calc(100vw - 120px);
+	}
+	#timeline ul li:nth-child(even) div {
+		left: 40px;
+	}
+	#timeline ul li:nth-child(even) div::before {
+		left: -15px;
+		border-width: 8px 16px 8px 0;
+		border-color: transparent var(--secondary-color);
+	}
+}

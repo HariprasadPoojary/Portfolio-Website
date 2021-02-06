@@ -1,0 +1,101 @@
+#timeline {
+	ul {
+		padding: 50px 0;
+		margin: 15px;
+		li {
+			// Timeline - line
+			position: relative;
+			padding: 5px 0;
+			margin: 0 auto;
+			width: 6px;
+			background-color: $dark-color;
+			border-radius: 5px;
+
+			h3 {
+				i {
+					margin-right: 10px;
+				}
+				p {
+					padding-left: 20px;
+				}
+			}
+			// Boxes
+			div {
+				position: relative;
+				bottom: 0;
+				width: 500px;
+				background-color: $main-color;
+				padding: 1.5rem;
+				border-radius: 8px;
+				transition: all 1s ease-in;
+				// Hide
+				visibility: hidden;
+				opacity: 0;
+			}
+		}
+
+		// Right-side box
+		li:nth-child(odd) div {
+			left: 45px;
+			// before coming in
+			transform: translateX(200px);
+		}
+
+		// Left-side box
+		li:nth-child(even) div {
+			left: -544px;
+			// before coming in
+			transform: translateX(-200px);
+		}
+
+		// Timeline Dots
+		li::after {
+			content: "";
+			position: absolute;
+			border-radius: 50%;
+			background-color: $main-color;
+			width: 25px;
+			height: 25px;
+			left: 50%;
+			bottom: 0;
+			transform: translateX(-50%);
+			transition: all 1s ease-in;
+			visibility: hidden;
+		}
+
+		// Arrow base
+		li div::before {
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 0;
+			bottom: 5px;
+			border-style: solid;
+		}
+
+		// Right arrow
+		li:nth-child(odd) div::before {
+			border-color: transparent $main-color;
+			border-width: 8px 16px 8px 0;
+			left: -15px;
+		}
+		// Left arrow
+		li:nth-child(even) div::before {
+			border-color: transparent $main-color;
+			border-width: 8px 0 8px 16px;
+			right: -15px;
+		}
+
+		// Show boxes on visiblility (class="show")
+		li.show div {
+			transform: none;
+			visibility: visible;
+			opacity: 1;
+		}
+		// Show dots on visiblility (class="show")
+		li.show::after {
+			visibility: visible;
+			background-color: $secondary-color;
+		}
+	}
+}

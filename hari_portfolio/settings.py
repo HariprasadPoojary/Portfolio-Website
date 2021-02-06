@@ -58,7 +58,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
-    # Serve static files on Heroku
+    # Serve static files on Heroku - WhiteNoiseMiddleware
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -139,7 +139,7 @@ MEDIA_URL = "/image/"
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
-# MEDIA_ROOT = os.path.join(BASE_DIR, "static/image")
+MEDIA_ROOT = os.path.join(BASE_DIR, "static/image")
 
 # Email Settings
 
@@ -158,20 +158,21 @@ EMAIL_USE_TLS = True
 # ? Heroku
 # Static file settings
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
+#! ---------
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 from whitenoise.storage import CompressedManifestStaticFilesStorage as storage
 
 storage.manifest_strict = False
 
+#! ---------
+
 # Postgresql connection on heroku
 import dj_database_url
 
 db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES["default"].update(db_from_env)
-
-# Activate Django-Heroku.
-django_heroku.settings(locals())
 
 # Logging
 DEBUG_PROPAGATE_EXCEPTIONS = True
@@ -189,3 +190,6 @@ LOGGING = {
         },
     },
 }
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
