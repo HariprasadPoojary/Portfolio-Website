@@ -62,7 +62,7 @@
 			href="https://fonts.googleapis.com/css2?family=Engagement&family=Noto+Sans+TC&family=Quicksand&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="{% static '/css/main.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %}" />
 	</head>
 	<body>
 		<header id="main-header">
@@ -125,7 +125,7 @@
 							</div>
 							<div class="intro-b">
 								<img
-									src="{% static '/image/hari-about.jpg' %}"
+									src="{% static 'image/hari-about.jpg' %}"
 									alt="Hariprasad"
 								/>
 							</div>
@@ -240,8 +240,8 @@
 		{% block footer %}
 			{% include 'base/footer.html' %} 
 		{% endblock footer %}
-		<script src="{% static '/js/typewriter.js' %}"></script>
-		<script src="{% static '/js/timeline.js' %}"></script>
-		<script src="{% static '/js/main.js' %}"></script>
+		<script src="{% static 'js/typewriter.js' %}"></script>
+		<script src="{% static 'js/timeline.js' %}"></script>
+		<script src="{% static 'js/main.js' %}"></script>
 	</body>
 </html>
