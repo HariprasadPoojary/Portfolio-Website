@@ -141,7 +141,7 @@ STATICFILES_DIRS = [
 ]
 
 
-# Email Settings
+#? Email Settings
 
 EMAIL_HOST = "smtp.gmail.com"
 # EMAIL_HOST = "smtp.office365.com"
