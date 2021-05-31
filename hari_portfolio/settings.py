@@ -44,14 +44,14 @@ ALLOWED_HOSTS = ["127.0.0.1", "hariprasad.herokuapp.com"]
 # Application definition
 
 INSTALLED_APPS = [
+    # My app
+    "base.apps.BaseConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    # My app
-    "base.apps.BaseConfig",
 ]
 
 MIDDLEWARE = [
@@ -141,7 +141,7 @@ STATICFILES_DIRS = [
 ]
 
 
-#? Email Settings
+# ? Email Settings
 
 EMAIL_HOST = "smtp.gmail.com"
 # EMAIL_HOST = "smtp.office365.com"
