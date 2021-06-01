@@ -361,6 +361,10 @@ a {
   padding-bottom: 2rem;
 }
 
+#main-experience .main-exp .exp-c .lead {
+  font-size: 1.4rem;
+}
+
 #main-experience .awards {
   display: -ms-grid;
   display: grid;
@@ -998,4 +1002,4 @@ a {
     border-color: transparent var(--secondary-color);
   }
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.ef578f4f8758.css.map */
