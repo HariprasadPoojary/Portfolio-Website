@@ -489,7 +489,7 @@ a {
   position: relative;
   bottom: 0;
   width: 500px;
-  background-color: #079992;
+  background-color: #7db4b1e0;
   padding: 1.5rem;
   border-radius: 8px;
   -webkit-transition: all 1s ease-in;
@@ -536,13 +536,13 @@ a {
 }
 
 #timeline ul li:nth-child(odd) div::before {
-  border-color: transparent #079992;
+  border-color: transparent #7db4b1e0;
   border-width: 8px 16px 8px 0;
   left: -15px;
 }
 
 #timeline ul li:nth-child(even) div::before {
-  border-color: transparent #079992;
+  border-color: transparent #7db4b1e0;
   border-width: 8px 0 8px 16px;
   right: -15px;
 }
