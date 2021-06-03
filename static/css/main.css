@@ -368,6 +368,10 @@ a {
       grid-template-columns: repeat(3, 1fr);
 }
 
+#main-experience .awards .highlight span {
+  font-size: 20px;
+}
+
 #main-experience .awards .highlight span:first-child {
   font-weight: bolder;
 }
@@ -379,7 +383,9 @@ a {
 }
 
 #main-experience .awards .highlight-sub {
+  padding-top: 10px;
   text-transform: none;
+  font-size: 13px;
 }
 
 #main-experience .awards div {

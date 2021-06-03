@@ -183,6 +183,9 @@ a {
 		grid-template-columns: repeat(3, 1fr);
 
 		.highlight {
+			span {
+				font-size: 20px;
+			}
 			span:first-child {
 				font-weight: bolder;
 			}
@@ -192,7 +195,9 @@ a {
 				font-style: italic;
 			}
 			&-sub {
+				padding-top: 10px;
 				text-transform: none;
+				font-size: 13px;
 			}
 		}
 
