@@ -231,6 +231,13 @@ a {
 			grid-column: 2/4;
 			border-left: $main-color 3px solid;
 			padding: 1rem;
+			:nth-child(2) {
+				padding-top: 3rem;
+			}
+			p {
+				text-align: left;
+				padding-top: 10px;
+			}
 		}
 	}
 }
