@@ -38,7 +38,11 @@ else:
     SECRET_KEY = os.getenv("SECRET_KEY")
     DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1", "hariprasad.herokuapp.com"]
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "hariprasad.herokuapp.com",
+    "www.hariprasad-poojary.in",
+]
 
 
 # Application definition
