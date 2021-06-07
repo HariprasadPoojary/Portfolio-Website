@@ -42,6 +42,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "hariprasad.herokuapp.com",
     "www.hariprasad-poojary.in",
+    "hariprasad-poojary.in",
 ]
 
 
