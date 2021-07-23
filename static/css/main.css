@@ -86,7 +86,7 @@
 .bottom-line {
   height: 2px;
   width: 3rem;
-  background-color: #079992;
+  background-color: #00d8c0;
   display: block;
   margin: 1rem auto;
 }
@@ -94,7 +94,7 @@
 .border-nav {
   width: 100%;
   height: 2px;
-  background-color: #333;
+  background-color: #2f3132;
 }
 
 .btn-main, .btn-light, .btn-dark {
@@ -108,7 +108,7 @@
 }
 
 .btn-main {
-  background-color: #079992;
+  background-color: #00d8c0;
   color: #fff;
 }
 
@@ -128,7 +128,7 @@
 }
 
 .btn-dark {
-  background-color: #333;
+  background-color: #2f3132;
   color: #fff;
 }
 
@@ -198,7 +198,7 @@ a {
 }
 
 #main-header {
-  background-color: #079992;
+  background-color: #00d8c0;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2338ada9' fill-opacity='0.92'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   position: relative;
 }
@@ -217,7 +217,7 @@ a {
   font-family: "Engagement", cursive;
   font-size: 2.5rem;
   padding: 1rem;
-  color: #333;
+  color: #2f3132;
   font-weight: 700;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -241,7 +241,7 @@ a {
 
 #main-header .head-nav-menu ul li a {
   text-transform: uppercase;
-  color: #333;
+  color: #2f3132;
   font-size: large;
   font-weight: bolder;
   border-bottom: transparent solid 3px;
@@ -292,7 +292,7 @@ a {
 }
 
 #main-about .intro-a .d-cv {
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 #main-about .intro-a .d-cv a {
@@ -419,7 +419,7 @@ a {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2/4;
-  border-left: #079992 3px solid;
+  border-left: #00d8c0 3px solid;
   padding: 1rem;
 }
 
@@ -433,7 +433,7 @@ a {
 }
 
 #main-skills {
-  background-color: #333;
+  background-color: #2f3132;
   color: #fff;
 }
 
@@ -456,7 +456,7 @@ a {
 #main-skills .skill-main ul li .outer-bar .inner-bar {
   height: 100%;
   border-radius: 5px;
-  background-color: #079992;
+  background-color: #00d8c0;
 }
 
 #logo-skills {
@@ -487,7 +487,7 @@ a {
   padding: 5px 0;
   margin: 0 auto;
   width: 6px;
-  background-color: #333;
+  background-color: #2f3132;
   border-radius: 5px;
 }
 
@@ -503,7 +503,7 @@ a {
   position: relative;
   bottom: 0;
   width: 500px;
-  background-color: #7db4b1e0;
+  background-color: #00ead0;
   padding: 1.5rem;
   border-radius: 8px;
   -webkit-transition: all 1s ease-in;
@@ -528,7 +528,7 @@ a {
   content: "";
   position: absolute;
   border-radius: 50%;
-  background-color: #079992;
+  background-color: #00d8c0;
   width: 25px;
   height: 25px;
   left: 50%;
@@ -550,13 +550,13 @@ a {
 }
 
 #timeline ul li:nth-child(odd) div::before {
-  border-color: transparent #7db4b1e0;
+  border-color: transparent #00ead0;
   border-width: 8px 16px 8px 0;
   left: -15px;
 }
 
 #timeline ul li:nth-child(even) div::before {
-  border-color: transparent #7db4b1e0;
+  border-color: transparent #00ead0;
   border-width: 8px 0 8px 16px;
   right: -15px;
 }
@@ -781,7 +781,7 @@ a {
 }
 
 #main-footer {
-  background-color: #333;
+  background-color: #2f3132;
   padding-top: 2rem;
 }
 
