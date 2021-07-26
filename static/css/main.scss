@@ -296,6 +296,8 @@ a {
 	.contact-me {
 		input,
 		textarea {
+			display: block;
+			width: 100%;
 			border: 2px solid;
 			padding: 0.6rem 1rem;
 			font-family: $font-others;
@@ -310,19 +312,19 @@ a {
 			}
 		}
 
-		#id_name {
+		#id_name_div {
 			grid-area: name;
 		}
-		#id_email {
+		#id_email_div {
 			grid-area: email;
 		}
-		#id_subject {
+		#id_subject_div {
 			grid-area: subject;
 		}
-		#id_phone {
+		#id_phone_div {
 			grid-area: phone;
 		}
-		#id_message {
+		#id_message_div {
 			grid-area: message;
 			margin-bottom: 1rem;
 			resize: none;
@@ -332,19 +334,22 @@ a {
 			width: 50%;
 			margin: auto; // center
 		}
-		#phone-error {
-			grid-area: phone-error;
-			width: 100%;
-			margin: auto; // center
-			background-color: $light-color;
-			height: 2rem;
-			color: $secondary-color;
+		.errorlist {
+			list-style: none;
+			margin: 0.5rem 0;
+			padding: 0;
+			color: #d6000b;
 		}
+		.invalid input,
+		.invalid textarea {
+			border-color: #d6000b;
+			background-color: #ffe6e7;
+		}
+		// Grid settings
 		display: grid;
 		grid-template-areas:
 			"name email"
 			"subject phone"
-			". phone-error"
 			"message message"
 			"submit submit";
 		gap: 1.2rem;

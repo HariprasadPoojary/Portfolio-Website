@@ -148,17 +148,17 @@ STATICFILES_DIRS = [
 
 # ? Email Settings
 
-EMAIL_HOST = "smtp.gmail.com"
-# EMAIL_HOST = "smtp.office365.com"
-EMAIL_PORT = "587"
-EMAIL_HOST_USER = "hari.j.wayne@gmail.com"
+EMAIL_HOST = "smtp.zoho.in"
+EMAIL_PORT = 587
 if is_prod:
-    EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD_GMAIL")
+    EMAIL_HOST_USER = os.environ.get("EMAIL_HOST")
+    EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")
 else:
-    EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD_GMAIL")
+    EMAIL_HOST_USER = os.getenv("EMAIL_HOST")
+    EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
+
 EMAIL_USE_TLS = True
-# EMAIL_FROM = "hari.j.wayne@gmail.com"
-# EMAIL_USE_SSL = False
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 
 # ? Heroku
 

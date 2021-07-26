@@ -27,17 +27,14 @@
 			<!-- prettier-ignore -->
 			{% csrf_token %}
 
-			{{contact_form.name}}
-			{{contact_form.email}}
-			{{contact_form.subject}}
-			{{contact_form.phone}}
-			{% if phone_error %}
-			<div id="phone-error">
-				<p class="lead text-center">{{phone_error}}</p>
-			</div>
+			{% for field in contact_form %}
 			<!-- prettier-ignore -->
-			{% endif %} 
-			{{contact_form.message}}
+			<div id="{{ field.id_for_label }}_div" 
+			{% if field.errors %} class="invalid" {% endif %}>
+				{{ field }}
+				{{ field.errors }}
+			</div>
+			{% endfor %}
 
 			<input type="submit" value="Submit" class="btn-dark" />
 		</form>
@@ -72,16 +69,4 @@
 
 	</div>
 </section> -->
-<script>
-	const name = document.querySelector("#id_name");
-	name.placeholder = "Name...";
-	const email = document.querySelector("#id_email");
-	email.placeholder = "Email...";
-	const subject = document.querySelector("#id_subject");
-	subject.placeholder = "Subject...";
-	const phone = document.querySelector("#id_phone");
-	phone.placeholder = "Phone...";
-	const message = document.querySelector("#id_message");
-	message.placeholder = "Your Message...";
-</script>
 {% endblock all-content %}

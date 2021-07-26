@@ -580,13 +580,15 @@ a {
 #main-contact .contact-me {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "name email" "subject phone" ". phone-error" "message message" "submit submit";
+      grid-template-areas: "name email" "subject phone" "message message" "submit submit";
   gap: 1.2rem;
   margin-bottom: 2rem;
 }
 
 #main-contact .contact-me input,
 #main-contact .contact-me textarea {
+  display: block;
+  width: 100%;
   border: 2px solid;
   padding: 0.6rem 1rem;
   font-family: "Quicksand", sans-serif;
@@ -607,32 +609,32 @@ a {
   outline: 3px solid transparent;
 }
 
-#main-contact .contact-me #id_name {
+#main-contact .contact-me #id_name_div {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: name;
 }
 
-#main-contact .contact-me #id_email {
+#main-contact .contact-me #id_email_div {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: email;
 }
 
-#main-contact .contact-me #id_subject {
+#main-contact .contact-me #id_subject_div {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: subject;
 }
 
-#main-contact .contact-me #id_phone {
+#main-contact .contact-me #id_phone_div {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: phone;
 }
 
-#main-contact .contact-me #id_message {
-  -ms-grid-row: 4;
+#main-contact .contact-me #id_message_div {
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: message;
@@ -641,7 +643,7 @@ a {
 }
 
 #main-contact .contact-me input[type="submit"] {
-  -ms-grid-row: 5;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: submit;
@@ -649,15 +651,17 @@ a {
   margin: auto;
 }
 
-#main-contact .contact-me #phone-error {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: phone-error;
-  width: 100%;
-  margin: auto;
-  background-color: #f4f4f4;
-  height: 2rem;
-  color: #ff7f50;
+#main-contact .contact-me .errorlist {
+  list-style: none;
+  margin: 0.5rem 0;
+  padding: 0;
+  color: #d6000b;
+}
+
+#main-contact .contact-me .invalid input,
+#main-contact .contact-me .invalid textarea {
+  border-color: #d6000b;
+  background-color: #ffe6e7;
 }
 
 #my-contact {
