@@ -46,6 +46,7 @@ class ContactMeForm(forms.Form):
         required=False,
     )
     message = forms.CharField(
+        max_length=2000,
         widget=forms.Textarea(
             attrs={"placeholder": "Message...", "cols": 40, "rows": 10,}
         ),
