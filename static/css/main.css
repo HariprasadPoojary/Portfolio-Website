@@ -292,7 +292,7 @@ a {
 }
 
 #main-about .intro-a .d-cv {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 #main-about .intro-a .d-cv a {
@@ -855,6 +855,9 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  #main-header .head-nav-menu ul li {
+    padding: 1rem 1.5rem;
   }
   #main-about {
         grid-template-areas: "introb" "introa";
